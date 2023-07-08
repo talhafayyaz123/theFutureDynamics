@@ -42,7 +42,7 @@ const AboutUs = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h1 className="large-heading">YT Labs</h1>
+                      <h1 className="large-heading">Mission</h1>
                     </div>
                     {/* <!--Spacer--> */}
                     <div
@@ -55,16 +55,10 @@ const AboutUs = () => {
                       data-aos="fade"
                       data-aos-delay="100"
                     >
-                      <p className="fz-30 fw-bold text-uppercase has-3-color">
-                        Digital solutions for <br />
-                        your business
-                      </p>
+
                     </div>
                     {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-                    ></div>
+
                     <div className="row">
                       <div className="col-xl-8">
                         <div style={{ maxWidth: "29.6875rem" }}>
@@ -74,22 +68,8 @@ const AboutUs = () => {
                             data-aos="fade"
                             data-aos-delay="200"
                           >
-                            {/* <!--Divider--> */}
-                            <div className="ptf-divider"></div>
-                            {/* <!--Spacer--> */}
-
-                            <div
-                              className="ptf-spacer"
-                              style={{
-                                "--ptf-xxl": "4.375rem",
-                                "--ptf-md": "2.1875rem",
-                              }}
-                            ></div>
                             <p className="fz-24">
-                              We help our client suceed by creating identities,
-                              digital experiences, andprintmaterials that
-                              communicate clearly, achieve marketing goals &
-                              look fantastic.
+                             A company with a vision to support every entrepreneur and business to make this world a better place by using our human-centered design approach leveraged by data-driven technology.
                             </p>
                           </div>
                         </div>

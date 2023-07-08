@@ -2,24 +2,16 @@ import React from "react";
 
 const SocialShare = [
   {
-    iconName: "socicon-twitter",
-    link: "https://twitter.com/",
-    iconClass: "twitter",
+    iconName: "socicon-linkedin",
+    link: "https://www.linkedin.com/company/the-future-dynamics",
   },
   {
-    iconName: "socicon-facebook",
-    link: "https://www.facebook.com/",
-    iconClass: "facebook",
-  },
-  {
+    iconName: "socicon-youtube",
+    link: "https://www.youtube.com/channel/UCRYG9NsTDnGETvb7y2hw5JA/",
+  } ,
+   {
     iconName: "socicon-instagram",
-    link: "https://www.instagram.com/",
-    iconClass: "instagram",
-  },
-  {
-    iconName: "socicon-pinterest",
-    link: "https://www.pinterest.com/",
-    iconClass: "pinterest",
+    link: "https://www.instagram.com/digitalfuturedynamics/?igshid=OGQ5ZDc2ODk2ZA==",
   },
 ];
 const Social = () => {
