@@ -37,7 +37,7 @@ const App = () => {
       />
       {/* End Animated Cursor */}
 
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       {/* End Scroll To Top */}
 
       <AllRoutes />
