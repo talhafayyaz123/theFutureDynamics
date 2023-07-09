@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import { Helmet } from "react-helmet";
 import HeaderDefault from "../../components/header/HeaderDefault";
 import CopyRightTwo from "../../components/footer/copyright/CopyRightTwo";
@@ -6,9 +6,14 @@ import FooterTwo from "../../components/footer/FooterTwo";
 import Social from "../../components/social/Social";
 import ContactForm from "../../components/ContactForm";
 import Address from "../../components/Address";
+import HubspotForm from "react-hubspot-form";
 
 const Contact = () => {
+  const [state,setState]=useState(false);
+ const handleClick = () => setState(!state);
+
   return (
+
     <div>
       <Helmet>
         <title>Contact</title>
@@ -86,7 +91,32 @@ const Contact = () => {
                       className="ptf-spacer"
                       style={{ "--ptf-xxl": "3.125rem" }}
                     ></div>
-                    <ContactForm />
+                    {/* <ContactForm /> */}
+                                 {state && (
+                            <div className="col-12">
+                              <div className="alert alert-success" role="alert">
+                                Your request has been received successfully, our
+                                team will contact you shortly.
+                              </div>
+                            </div>
+                          )}
+
+                            {!state && (
+                              <HubspotForm
+                                portalId="7083262"
+                                formId="162e1858-d687-49e5-8f2c-585316882a54"
+                                onSubmit={() => {}}
+                                onReady={() => {}}
+                                onFormSubmitted={() => {
+                               setState(true);
+                                  setTimeout(() => {
+                                     setState(false);
+                                  }, 3000);
+                                }}
+                                loading={<div>Loading...</div>}
+                              />
+                            )}
+
                     {/* End ContactForm */}
                   </div>
                 </div>
