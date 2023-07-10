@@ -80,7 +80,7 @@ const AllRoutes = () => {
 
         {/* Portfolio */}
         <Route path="/works-grid" element={<WorksGrid />} />
-        <Route path="/works-masonry" element={<WorksMasonry />} />
+        <Route path="/work" element={<WorksMasonry />} />
         <Route path="/works-listing" element={<WorksListing />} />
         <Route path="/works-carousel" element={<WorksCarousel />} />
         <Route path="/works-showcase" element={<WorksShowcase />} />

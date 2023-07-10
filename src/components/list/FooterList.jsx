@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 const footerItems = [
   { itemName: "Faqs", link: "" },
   { itemName: "Term & Conditions", link: "/terms" },
-  { itemName: "Privacy Policy", link: "" },
-  { itemName: "Help", link: "" },
-  { itemName: "Works", link: "" },
+  { itemName: "Help", link: "/contact" },
+  { itemName: "Works", link: "/work" },
   { itemName: "Studio", link: "" },
-  { itemName: "News", link: "" },
+  { itemName: "Story", link: "/about-us" },
 ];
 
 const FooterList = () => {
@@ -19,6 +18,15 @@ const FooterList = () => {
           <Link to={item.link}>{item.itemName}</Link>
         </li>
       ))}
+        <li>
+          <a
+              href="https://medium.com/@futuredynamics2020"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Blog
+            </a>
+        </li>
     </ul>
   );
 };

@@ -12,139 +12,32 @@ import Social from "../../social/Social";
 
 const menuContent = [
   {
-    name: "Home",
-    dropDownItems: [
-      {
-        name: "Home Default",
-        routerPath: "/home-default",
-      },
-      {
-        name: "Home Studio",
-        routerPath: "/home-studio",
-      },
-      {
-        name: "Home Agency",
-        routerPath: "/home-agency",
-      },
-      {
-        name: "Home Minimal",
-        routerPath: "/home-minimal",
-      },
-      {
-        name: "Home Dark",
-        routerPath: "/home-dark",
-      },
-      {
-        name: "Home Freelancer",
-        routerPath: "/home-freelancer",
-      },
-      {
-        name: "Home Trending",
-        routerPath: "/home-trending",
-      },
-      {
-        name: "Home Modern",
-        routerPath: "/home-modern",
-      },
-    ],
+    name: "About Us",
+    routerPath: "/about-us",
+    activeClass: "sf-with-ul",
+    menuClass: "",
+
+  },
+  {
+    name: "Services",
+    activeClass: "",
+    menuClass: "",
+    routerPath: "/service",
   },
   {
     name: "Portfolio",
-    dropDownItems: [
-      {
-        name: "Works Grid",
-        routerPath: "/works-grid",
-      },
-      {
-        name: "Works Masonry",
-        routerPath: "/works-masonry",
-      },
-      {
-        name: "Works Listing",
-        routerPath: "/works-listing",
-      },
-      {
-        name: "Works Carousel",
-        routerPath: "/works-carousel",
-      },
-      {
-        name: "Works Showcase",
-        routerPath: "/works-showcase",
-      },
-    ],
+    activeClass: "",
+    menuClass: "",
+     routerPath: "/work",
   },
-  {
-    name: "Blog",
-    dropDownItems: [
-      {
-        name: "Blog Grid",
-        routerPath: "/blog-grid",
-      },
-      {
-        name: "Blog Masonry",
-        routerPath: "/blog-masonry",
-      },
-      {
-        name: "Blog Sidebar",
-        routerPath: "/blog-sidebar",
-      },
-      {
-        name: "Blog Details",
-        routerPath: "/blog-details",
-      },
-      {
-        name: "Blog Details Sidebar",
-        routerPath: "/blog-details-sidebar",
-      },
-    ],
-  },
-  {
-    name: "Pages",
-    dropDownItems: [
-      {
-        name: "About Us",
-        routerPath: "/about-us",
-      },
-      {
-        name: "About Me",
-        routerPath: "/about-me",
-      },
-      {
-        name: "Services",
-        routerPath: "/service",
-      },
-      {
-        name: "Service Details",
-        routerPath: "/service-details",
-      },
-      {
-        name: "Pricing",
-        routerPath: "/pricing",
-      },
-      {
-        name: "Team",
-        routerPath: "/team",
-      },
-      {
-        name: "FAQ",
-        routerPath: "/faq",
-      },
-      {
-        name: "Contact",
-        routerPath: "/contact",
-      },
-      {
-        name: "Page 404",
-        routerPath: "/404",
-      },
-      {
-        name: "Coming Soon",
-        routerPath: "/coming-soon",
-      },
-    ],
+
+{
+    name: "Connect",
+    activeClass: "",
+    menuClass: "",
+    routerPath: "/contact",
   },
 ];
-
 const MobileMenu = () => {
   return (
     <>
@@ -154,11 +47,7 @@ const MobileMenu = () => {
             <Menu className="sidebar-menu_wrapper">
               {menuContent.map((item, i) => (
                 <SubMenu title={item.name} key={i}>
-                  {item.dropDownItems.map((val, i) => (
-                    <MenuItem key={i}>
-                      <Link to={val.routerPath}>{val.name}</Link>
-                    </MenuItem>
-                  ))}
+                    <Link to={item.routerPath}>{item.name}</Link>
                 </SubMenu>
               ))}
             </Menu>
@@ -169,19 +58,17 @@ const MobileMenu = () => {
 
       <div className="ptf-offcanvas-menu__footer">
         <p className="ptf-offcanvas-menu__copyright">
-          @{new Date().getFullYear()} <span>Moonex</span>. All Rights Reserved.{" "}
-          <br />
-          Development by{" "}
-          <span>
+      The Future Dynamics   ©{new Date().getFullYear()}{" "}
+          <span className="has-white-color">
             <a
-              href="https://themeforest.net/user/ib-themes"
-              target="_blank"
+              href="https://thefuturedynamics.com"
               rel="noopener noreferrer"
+              target="_blank"
             >
-              ib-themes
+              | &nbsp;
             </a>
           </span>
-          .
+             Brand Of Dynamics Stream - Microsoft Gold Partners
         </p>
         <Social />
       </div>
