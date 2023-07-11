@@ -4,31 +4,27 @@ import { Link } from "react-router-dom";
 const serviceContent = [
   {
     icon: "lnil lnil-cup",
-    titlePart1: "BRAND",
-    titlePart2: "CONSULTANT",
-    descriptions: ` We build and activate brands throung cultural insight &amp;
-        strategic vision.`,
+    titlePart1: "Business",
+    titlePart2: "Consulting",
+    descriptions: `We provide business consultancy in UAE.`,
   },
   {
     icon: "lnil lnil-website-rank",
-    titlePart1: "UI/UX",
-    titlePart2: "SOLUTION",
-    descriptions: ` We build and activate brands throung cultural insight &amp;
-        strategic vision.`,
+    titlePart1: "Virtual",
+    titlePart2: "Reality",
+    descriptions: `We provide trainings with Virtual Reality.`,
   },
   {
     icon: "lnil lnil-3d",
-    titlePart1: "PACKAGING",
+    titlePart1: "Marketing",
     titlePart2: "",
-    descriptions: ` We build and activate brands throung cultural insight &amp;
-        strategic vision.`,
+    descriptions: `We Provide Digital Content ,Search Engine Optimization,Performance Marketing.`,
   },
   {
-    icon: "lnil lnil-video-camera-alt-1",
-    titlePart1: "MOTION VIDEO",
-    titlePart2: "& TVC",
-    descriptions: ` We build and activate brands throung cultural insight &amp;
-        strategic vision.`,
+    icon: "lnil lnil-website-rank",
+    titlePart1: "Technology",
+    titlePart2: "",
+    descriptions: `We provide UI/UX,Website Development,Mobile App Development,Enterprise Solutions.`,
   },
 ];
 

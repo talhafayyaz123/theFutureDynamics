@@ -10,7 +10,7 @@ import HubspotForm from "react-hubspot-form";
 
 const Contact = () => {
   const [state,setState]=useState(false);
- const handleClick = () => setState(!state);
+
 
   return (
 

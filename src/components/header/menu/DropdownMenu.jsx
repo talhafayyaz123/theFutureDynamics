@@ -34,18 +34,7 @@ const DropdownMenu = () => {
     <ul className="sf-menu">
       {menuContent.map((item, i) => (
         <li className={`menu-item-has-children ${item.menuClass}`} key={i}>
-
-                  <Link to={item.routerPath}  className={item.activeClass}>  <span>{item.name}</span></Link>
-          {/* <ul className="sub-menu mega">
-            {item.map((val, i) => (
-              <li key={i}>
-                <Link to={val.routerPath}>
-                  {" "}
-                  <span>{val.name}</span>
-                </Link>
-              </li>
-            ))}
-          </ul> */}
+            <Link to={item.routerPath}  className={item.activeClass}>  <span>{item.name}</span></Link>
         </li>
       ))}
     </ul>

@@ -5,11 +5,28 @@ const Address = () => {
     <>
       {/* <!--Animated Block--> */}
       <div className="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-        <h5 className="fz-14 text-uppercase has-3-color fw-normal">Address</h5>
+        <h3 className="fz-20 lh-1p5 has-black-color">Dubai:</h3>
         {/* <!--Spacer--> */}
         <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
+
         <p className="fz-20 lh-1p5 has-black-color">
          1803 The Metropolis Tower DUBAI
+        </p>
+
+       <h3 className="fz-20 lh-1p5 has-black-color">USA:</h3>
+        {/* <!--Spacer--> */}
+        <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
+
+        <p className="fz-20 lh-1p5 has-black-color">
+       2002 S Mason Rd Katy, TX 77450, USA
+        </p>
+
+        <h3 className="fz-20 lh-1p5 has-black-color">Pakistan:</h3>
+        {/* <!--Spacer--> */}
+        <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
+
+        <p className="fz-20 lh-1p5 has-black-color">
+      100-104 PCSIR Community Building, LAHORE
         </p>
       </div>
 

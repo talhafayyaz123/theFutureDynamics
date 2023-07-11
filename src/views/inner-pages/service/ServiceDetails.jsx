@@ -1,7 +1,5 @@
-import React from "react";
+import React  ,{useState}from "react";
 import { Helmet } from "react-helmet";
-import CopyRight from "../../../components/footer/copyright/CopyRight";
-import Footer from "../../../components/footer/Footer";
 import ServiceListThree from "../../../components/list/ServiceListThree";
 import Faq from "../../../components/faq/Faq";
 import Skills from "../../../components/skill/Skills";
@@ -11,9 +9,14 @@ import ImageGridFour from "../../../components/image-grid/ImageGridFour";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
 import HeaderDefault from "../../../components/header/HeaderDefault";
-
+import HubspotForm from "react-hubspot-form";
 
 const ServiceDetails = () => {
+  const [showSuccess,setState]=useState(false);
+  const [showForm,setFormState]=useState(true);
+   const toggleFormVisibility = () => setFormState(!showForm);
+
+
   return (
     <div>
       <Helmet>
@@ -213,6 +216,63 @@ const ServiceDetails = () => {
                     </div>
                   </div>
                 </div>
+
+                    <div className="custom-section__container">
+              <div className="row" style={{ width: "100%" }}>
+                <div className="col-12">
+                  <div className="copy-grid__item" style={{ width: "100%" ,display: 'flex','justifyContent':'center'}}>
+                    <div className="center-align-content">
+                      <button
+                       onClick={toggleFormVisibility}
+                        className="ptf-btn ptf-btn--secondary"
+                      >
+                        Ready to turn your idea into reality
+
+
+                        <span style={{ marginLeft: 10 }}>
+                          {showForm ? (
+                            <i className="fa fa-chevron-up" />
+                          ) : (
+                            <i className="fa fa-chevron-down" />
+                          )}
+                        </span>
+                      </button>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div><br></br>
+              <div className="row">
+                {showSuccess && (
+                  <div className="col-12">
+                    <div className="alert alert-success" role="alert">
+                      Your request has been received successfully, our team will
+                      contact you shortly.
+                    </div>
+                  </div>
+                )}
+                {showForm && !showSuccess && (
+                  <div className="col-12">
+                    <HubspotForm
+                      portalId="7083262"
+                      formId="ff6b0e3a-39e5-4b30-abe8-79d977349fa9"
+                      onSubmit={() => {}}
+                      onReady={() => {}}
+                      onFormSubmitted={() => {
+                        setState(true);
+                        setTimeout(() => {
+                        setState(false);
+                        }, 3000);
+                      }}
+                      loading={<div>Loading...</div>}
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
+
               </div>
             </div>
             {/* <!--Spacer--> */}
