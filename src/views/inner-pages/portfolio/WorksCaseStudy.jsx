@@ -5,18 +5,17 @@ const caseStudyContent = [
     caseContent: [
       {
         dealyAnimation: "100",
-        title: "CLIENT",
-        subTitle1: `Paul Themes Company,
-                `,
-        subTitle2: "Russia",
+        title: "Platform",
+        subTitle1: "Android Mobile App",
+        subTitle2: "",
         subTitle3: "",
       },
       {
         dealyAnimation: "200",
         title: "SERVICES",
-        subTitle1: `UI/UX, Back-End,`,
-        subTitle2: "Front-End, Graphic Design,",
-        subTitle3: "Animation",
+        subTitle1: `Quality Assurance`,
+        subTitle2: "Security & Functional Testing,",
+        subTitle3: "",
       },
     ],
   },
@@ -24,16 +23,16 @@ const caseStudyContent = [
     caseContent: [
       {
         dealyAnimation: "300",
-        title: "TEAM",
-        subTitle1: `LoganCee - UI/UX Designer
+        title: "Technique Used",
+        subTitle1: `Black Box
                 `,
-        subTitle2: "Pavel Suslov - Developer",
-        subTitle3: "",
+        subTitle2: "Mannual Testing",
+        subTitle3: "Automated Testing",
       },
       {
         dealyAnimation: "400",
-        title: "DATE",
-        subTitle1: `Feburary 25th, 2022`,
+        title: "Industry",
+        subTitle1: `Retail eCommerce Mobile App Testing Project - DIFC Dubai`,
         subTitle2: "",
         subTitle3: "",
       },

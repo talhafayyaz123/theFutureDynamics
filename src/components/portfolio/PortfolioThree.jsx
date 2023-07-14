@@ -12,16 +12,17 @@ const portfolioContent = [
     categorie: "Product",
     title: "Film & Art Festival",
   },
+{
+    img: "work-4",
+    categorie: "Illustration",
+    title: "Swiss Style Poster",
+  },
   {
     img: "work-3",
     categorie: "Branding, Packaging",
     title: "Dark Wishky Wine",
   },
-  {
-    img: "work-4",
-    categorie: "Illustration",
-    title: "Swiss Style Poster",
-  },
+
   {
     img: "work-5",
     categorie: "UI/UX",

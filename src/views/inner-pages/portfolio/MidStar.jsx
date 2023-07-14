@@ -8,11 +8,11 @@ import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
 
 
-const WorksShowcase = () => {
+const MidStar = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--work-showcase-1">
       <Helmet>
-        <title> Work Detail</title>
+        <title>Mid Star</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -76,16 +76,13 @@ const WorksShowcase = () => {
                 >
                   {/* <!--Simple Image--> */}
                   <div className="ptf-simple-image">
-                    <a
-                      href="assets/img/portfolio/single-work/content-image-1.png"
-                      rel="nofollow"
-                    >
+
                       <img
                         src="assets/img/portfolio/single-work/content-image-1.png"
                         alt="work"
                         loading="lazy"
                       />
-                    </a>
+
                   </div>
                 </div>
               </div>
@@ -257,4 +254,4 @@ const WorksShowcase = () => {
   );
 };
 
-export default WorksShowcase;
+export default MidStar;

@@ -33,6 +33,12 @@ import WorksMasonry from "../views/inner-pages/portfolio/WorksMasonry";
 import WorksListing from "../views/inner-pages/portfolio/WorksListing";
 import WorksCarousel from "../views/inner-pages/portfolio/WorksCarousel";
 import WorksShowcase from "../views/inner-pages/portfolio/WorksShowcase";
+import MidStar from "../views/inner-pages/portfolio/MidStar";
+import N2go from "../views/inner-pages/portfolio/N2go";
+import Bhuth from "../views/inner-pages/portfolio/Bhuth";
+import Hospital from "../views/inner-pages/portfolio/Hospital";
+import Continental from "../views/inner-pages/portfolio/Continental";
+import Talabat from "../views/inner-pages/portfolio/Talabat";
 
 // Others
 import Contact from "../views/inner-pages/Contact";
@@ -84,6 +90,13 @@ const AllRoutes = () => {
         <Route path="/works-listing" element={<WorksListing />} />
         <Route path="/works-carousel" element={<WorksCarousel />} />
         <Route path="/works-showcase" element={<WorksShowcase />} />
+        <Route path="/mid-star" element={<MidStar />} />
+        <Route path="/n2go" element={<N2go />} />
+        <Route path="/bhuth" element={<Bhuth />} />
+        <Route path="/hospital" element={<Hospital />} />
+        <Route path="/continental" element={<Continental />} />
+        <Route path="/talabat" element={<Talabat />} />
+
 
         {/* others */}
         <Route path="/team" element={<Team />} />

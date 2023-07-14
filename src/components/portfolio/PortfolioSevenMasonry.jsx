@@ -22,47 +22,47 @@ const portfolioMenu = [
 const portfolioContent = [
   {
     tabContent: [
-      { img: "work-1", meta: "Web Design", title: "Supro Online Store" },
-      { img: "work-3", meta: "Web Design, Branding", title: "FG Print Brand" },
-      { img: "work-5", meta: "Web Design", title: "Taskly Dashboard" },
-      { img: "work-4", meta: "Illustration", title: "LW Poster" },
-      { img: "work-2", meta: "Branding, Motion", title: "Film & Art Festival" },
-      { img: "work-6", meta: "Branding, Motion", title: "Dark Wishky Wine" },
+      { img: "work-1", meta: "Web Design", title: "Supro Online Store" ,to:'/mid-star' },
+      { img: "work-3", meta: "Web Design, Branding", title: "FG Print Brand" ,to:'/n2go'},
+      { img: "work-5", meta: "Web Design", title: "Taskly Dashboard" ,to:'/bhuth'},
+      { img: "work-4", meta: "Illustration", title: "LW Poster" ,to:'/hospital'},
+      { img: "work-2", meta: "Branding, Motion", title: "Film & Art Festival" ,to:'/continental'},
+      { img: "work-6", meta: "Branding, Motion", title: "Dark Wishky Wine" ,to:'/talabat' },
     ],
   },
   {
     tabContent: [
-      { img: "work-3", meta: "Illustration", title: "LW Poster" },
-      { img: "work-6", meta: "Branding, Motion", title: "Film & Art Festival" },
-      { img: "work-5", meta: "Branding, Motion", title: "Dark Wishky Wine" },
+      { img: "work-3", meta: "Illustration", title: "LW Poster" ,to:'/hospital' },
+      { img: "work-6", meta: "Branding, Motion", title: "Film & Art Festival"  ,to:'/continental'},
+      { img: "work-5", meta: "Branding, Motion", title: "Dark Wishky Wine"  ,to:'/talabat' },
     ],
   },
   {
     tabContent: [
-      { img: "work-1", meta: "Web Design", title: "Supro Online Store" },
-      { img: "work-2", meta: "Web Design, Branding", title: "FG Print Brand" },
-      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" },
+      { img: "work-1", meta: "Web Design", title: "Supro Online Store" ,to:'/mid-star'},
+      { img: "work-2", meta: "Web Design, Branding", title: "FG Print Brand" ,to:'/n2go' },
+      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" ,to:'/bhuth' },
     ],
   },
   {
     tabContent: [
-      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" },
-      { img: "work-3", meta: "Illustration", title: "LW Poster" },
-      { img: "work-6", meta: "Branding, Motion", title: "Film & Art Festival" },
+      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" ,to:'/bhuth'},
+      { img: "work-3", meta: "Illustration", title: "LW Poster" ,to:'/hospital'},
+      { img: "work-6", meta: "Branding, Motion", title: "Film & Art Festival" ,to:'/continental'},
     ],
   },
   {
     tabContent: [
-      { img: "work-1", meta: "Web Design", title: "Supro Online Store" },
-      { img: "work-2", meta: "Web Design, Branding", title: "FG Print Brand" },
-      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" },
+      { img: "work-1", meta: "Web Design", title: "Supro Online Store" ,to:'/mid-star'},
+      { img: "work-2", meta: "Web Design, Branding", title: "FG Print Brand" ,to:'/n2go'},
+      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" ,to:'/bhuth' },
     ],
   },
   {
     tabContent: [
-      { img: "work-2", meta: "Web Design, Branding", title: "FG Print Brand" },
-      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" },
-      { img: "work-1", meta: "Web Design", title: "Supro Online Store" },
+      { img: "work-2", meta: "Web Design, Branding", title: "FG Print Brand" ,to:'/n2go'},
+      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" ,to:'/bhuth'},
+      { img: "work-1", meta: "Web Design", title: "Supro Online Store" ,to:'/mid-star'},
     ],
   },
 ];
@@ -91,7 +91,6 @@ const PortfolioSevenMasonry = () => {
         {portfolioContent.map((item, i) => (
           <TabPanel key={i}>
             {/* {/* <!--Animated Block--> */}
-
             <div
               className="ptf-animated-block"
               data-aos="fade"
@@ -103,11 +102,12 @@ const PortfolioSevenMasonry = () => {
                 columnClassName="my-masonry-grid_column"
               >
                 {item.tabContent.map((singleItem, i) => (
+
                   <article className="ptf-work ptf-work--style-1" key={i}>
                     <div className="ptf-work__media">
                       <Link
                         className="ptf-work__link"
-                        to="/works-showcase"
+                        to={singleItem.to}
                       ></Link>
                       <img
                         src={`assets/img/portfolio/masonry/${singleItem.img}.png`}
@@ -120,7 +120,7 @@ const PortfolioSevenMasonry = () => {
                         {singleItem.meta}
                       </div>
                       <h4 className="ptf-work__title">
-                        <Link to="/works-showcase">{singleItem.title}</Link>
+                        <Link to={singleItem.to}>{singleItem.title}</Link>
                       </h4>
                     </div>
                   </article>

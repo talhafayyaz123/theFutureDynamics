@@ -1,18 +1,64 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Social from "../../../components/social/Social";
-import WorksCaseStudy from "./WorksCaseStudy";
-import ImageGridThree from "../../../components/image-grid/ImageGridThree";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
+import { Gallery, Item } from "react-photoswipe-gallery";
 
+const imageList = [
+  {
+    img: "assets/img/portfolio/single-work/N2Go-App-Protfolio.png",
+    column: "col-lg-12",
+    alt: "image 3",
+    width: "600",
+    height: "400",
+  },
+];
 
-const WorksShowcase = () => {
+const caseStudyContent = [
+  {
+    caseContent: [
+      {
+        dealyAnimation: "100",
+        title: "Platform",
+        subTitle1: "iOS & Android",
+        subTitle2: "",
+        subTitle3: "",
+      },
+      {
+        dealyAnimation: "200",
+        title: "SERVICES",
+        subTitle1: `Application Architecture,User Interface/ User Experience,`,
+        subTitle2: "Backend Development,",
+        subTitle3: "Security & Functional Testing",
+      },
+    ],
+  },
+  {
+    caseContent: [
+      {
+        dealyAnimation: "300",
+        title: "Technique Used",
+        subTitle1: `UIKit`,
+        subTitle2: "Core Graphics,",
+        subTitle3: "Native,Flutter",
+      },
+      {
+        dealyAnimation: "400",
+        title: "Industry",
+        subTitle1: `Online, eCommerce & Retail - DIFC Dubai- Mobile App Design & Development`,
+        subTitle2: "",
+        subTitle3: "",
+      },
+    ],
+  },
+];
+const N2go = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--work-showcase-1">
       <Helmet>
-        <title> Work Detail</title>
+        <title>N2GO</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -37,7 +83,7 @@ const WorksShowcase = () => {
                       data-aos-delay="0"
                     >
                       <h1 className="large-heading">
-                        MIDSTAR MANAGEMENT
+                       N2GO
                       </h1>
                       {/* <!--Spacer--> */}
                       <div
@@ -56,7 +102,44 @@ const WorksShowcase = () => {
                     ></div>
                   </div>
                   {/* End .col */}
-                  <WorksCaseStudy />
+               {caseStudyContent.map((val, i) => (
+                <div className="col-xl-3" key={i}>
+                {/* <!--Spacer--> */}
+                <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
+                {/* <!--Animated Block--> */}
+                {val.caseContent.map((item, i) => (
+                    <div key={i}>
+                    <div
+                        className="ptf-animated-block mb-70"
+                        data-aos="fade"
+                        data-aos-delay={item.dealyAnimation}
+                    >
+                        <h5 className="fz-14 text-uppercase has-3-color fw-normal">
+                        {item.title}
+                        </h5>
+                        {/* <!--Spacer--> */}
+                        <div
+                        className="ptf-spacer"
+                        style={{ "--ptf-xxl": "1.25rem" }}
+                        ></div>
+                        <p className="fz-20 lh-1p5 has-black-color">
+                        {item.subTitle1} <br />
+                        {item.subTitle2} <br />
+                        {item.subTitle3}
+                        </p>
+                    </div>
+                    {/* <!--Spacer--> */}
+                    <div
+                        className="ptf-spacer"
+                        style={{
+                        "--ptf-xxl": " 4.375rem",
+                        "--ptf-md": "2.1875rem",
+                        }}
+                    ></div>
+                    </div>
+                ))}
+                </div>
+            ))}
                 </div>
               </div>
               {/* <!--Spacer--> */}
@@ -76,16 +159,13 @@ const WorksShowcase = () => {
                 >
                   {/* <!--Simple Image--> */}
                   <div className="ptf-simple-image">
-                    <a
-                      href="assets/img/portfolio/single-work/content-image-1.png"
-                      rel="nofollow"
-                    >
+
                       <img
-                        src="assets/img/portfolio/single-work/content-image-1.png"
+                        src="assets/img/portfolio/single-work/N2GO.png"
                         alt="work"
                         loading="lazy"
                       />
-                    </a>
+
                   </div>
                 </div>
               </div>
@@ -106,7 +186,7 @@ const WorksShowcase = () => {
                   data-aos-delay="0"
                 >
                   <p className="fz-30 has-black-color">
-                    Midstar is industry’s recognized leader in the agricultural industry by having a significant impact on the food and feed supply through innovative trade and logistics solutions.realized through synchronized and innovative solutions to supply chain management.
+                 Midstar is industry’s recognized leader in the agricultural industry by having a significant impact on the food and feed supply through innovative trade and logistics solutions.realized through synchronized and innovative solutions to supply chain management.
                   </p>
                 </div>
 
@@ -153,7 +233,7 @@ const WorksShowcase = () => {
                   data-aos-delay="0"
                 >
                   <p className="fz-18">
-                    To make sure the App they have created is fully functional and security is not compromised. Technology projects that are involved transactions and financial interactions always requires the best level of security and functionality.
+                  N2GO is a Successful Salon based in Dubai, they approached us to transform their organization on digital platforms and we offered then to grow their business with a Booking App where people schedule  relaxing time & tailored Makeup, Facial, Nails, Hair, and other parlor services at their home, with a click of a button.
                   </p>
                 </div>
 
@@ -186,25 +266,14 @@ const WorksShowcase = () => {
                   data-aos-delay="0"
                 >
                   <p className="fz-18">
-                   We performed a Manually using the Black Box testing techniques to verify that the application delivers all the functional specifications which are expected from app under test.
+                  The project aimed to develop an online salon services booking application for both Android and iOS platforms, providing users with a convenient way to book appointments at salons. The development team consisted of many members: UI/UX, Designers, Android developer & proficient iOS developer. They collaborated closely throughout the project to ensure a seamless experience across both platforms.
+                    The project began with a comprehensive analysis of the salon industry and user preferences. The team conducted market research, studied existing salon booking apps, and gathered feedback from salon owners and customers. This research formed the basis for creating a unique and user-friendly app concept.<br></br>
+                    Alex focused on developing the Android version of the app, using Java and Kotlin within the Android Studio IDE. Simultaneously worked on the iOS version, utilizing Swift in the Xcode IDE, adhering to Apple's design guidelines and human interface principles. They maintained consistent communication to align the user experience and design elements across both platforms.<br></br>
+                    The development process involved creating a robust backend system to manage salon profiles, services, and appointment scheduling. We integrated APIs for location-based services, secure payment processing, and real-time availability updates.
+                    The app featured a visually appealing interface, intuitive navigation, and personalized user profiles. Users could browse salon listings, view service menus, check availability, and book appointments at their preferred salons. Push notifications were implemented to send reminders and updates to both users and salon owners.<br></br>
+                    Extensive testing was conducted to ensure the app's stability, responsiveness, and compatibility with different devices and operating system versions. The project encompassed market research, backend development, API integration, testing, user feedback incorporation, and successful deployment on the app stores, resulting in a convenient and efficient solution for users seeking salon services.
                   </p>
-                    <p>We will perform the following types of testing:</p>
-                     <ul className="fz-18" style={{ lineHeight: 2 }}>
-                    <li>
-                    Kali Linux
-                    </li>
-                    <li>
-                     SQL Injections
-                    </li>
-                    <li>Penetration Testing</li>
-                    <li>Functional Testing </li>
-                    <li>UAT Testing </li>
-                    <li>UI/UX Testing </li>
-                    <li>Security Testing </li>
-                    <li>Full Testing in Arabic</li>
-                    <li>Multi-Lingual Testing (Arabic) </li>
-                    <li>Major Flows Testing in Arabic </li>
-                  </ul>
+
                 </div>
 
                 {/* <!--Spacer--> */}
@@ -220,7 +289,40 @@ const WorksShowcase = () => {
                   data-aos-delay="0"
                 >
                   {/* <!--Gallery--> */}
-                  <ImageGridThree />
+                   <Gallery>
+                <div
+                    className="ptf-justified-gallery row"
+                    style={{
+                    "--bs-gutter-x": "2rem",
+                    "--bs-gutter-y": "2rem",
+                    }}
+                  >
+                    {imageList.map((val, i) => (
+                    <div className={val.column} key={i}>
+                        <div className="ptf-gallery__item">
+                        <div className="ptf-simple-image">
+                            <Item
+                            original={val.img}
+                            thumbnail={val.img}
+                            width={val.width}
+                            height={val.height}
+                            >
+                            {({ ref, open }) => (
+                                <img
+                                src={val.img}
+                                alt="works gallery"
+                                role="button"
+                                ref={ref}
+                                onClick={open}
+                                />
+                            )}
+                            </Item>
+                        </div>
+                        </div>
+                    </div>
+                    ))}
+                </div>
+                </Gallery>
                 </div>
               </div>
             </section>
@@ -257,4 +359,4 @@ const WorksShowcase = () => {
   );
 };
 
-export default WorksShowcase;
+export default N2go;
