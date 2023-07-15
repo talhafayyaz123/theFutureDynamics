@@ -186,7 +186,7 @@ const Continental = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <p className="fz-30 has-black-color">
+                  <p className=" has-black-color" style={{fontSize:"1.6rem"}}>
                   A leading global manufacturer of innovative and high-performance tires. With a rich heritage spanning over a century, we are committed to delivering cutting-edge tire solutions that provide safety, comfort, and performance for drivers worldwide.
                   </p>
                 </div>
@@ -267,16 +267,17 @@ const Continental = () => {
                   data-aos-delay="0"
                 >
                   <p className="fz-18">
-                 Continental has thousands of registered resellers in Middle East, and it was very challenging for any end-user to find the authorized resellers from their website and the showcase right product according to car rim size, on their website.
-                  </p><br></br>
+                 We studies the entire Tire industry in Middle East, understood the buyers purchasing behaviours and preferences while  choosing tire company. The more convenience you show to end-users while choosing a tire will help them to make a decision, we developed a complete search engine that created a lot of ease for users to find out the best possible and suitable tire as per their needs, they just have to share the car model, rim size and Search brings best suitable options from range of products.
+                  </p>
                 <p>Web Portal development for such organization involves comprehensive and user-friendly UI/UX and quick and better information to its customers on a click of a button, hence our team made sure all the parameters are met. Here’s a process we followed:</p>
                     <br></br>
-                    <span>1- Define goals and target audience</span>
-                    <span>2- Planning & Requirement Gathering</span>
-                    <span>3- User Experience (UX) design</span>
-                    <span>4- Highly effective & fast processing back-end development</span>
-                    <span>5- Content Management CMS</span>
-                    <span>6- Integrations & APIs</span>
+                    <p>1- Define goals and target audience</p>
+                    <p>2- Planning & Requirement Gathering</p>
+                    <p>3- User Experience (UX) design</p>
+                    <p>4- Highly effective & fast processing back-end development</p>
+                    <p>5- Content Management CMS</p>
+                    <p>6- Integrations & APIs</p>
+                    <p>7- Quality Assurance</p>
                 </div>
 
 

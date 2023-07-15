@@ -186,7 +186,7 @@ const Ewt = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <p className="fz-30 has-black-color">
+                  <p className="has-black-color" style={{fontSize:"1.6rem"}}>
                   Expertise Windows Training (EWTraining) provides tailored Training and development solutions which address specific gaps in many areas of soft skills, leadership, finance, banking, human resources, selling skills, retail and insurance and much more
                   </p>
 

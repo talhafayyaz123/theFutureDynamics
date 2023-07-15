@@ -102,7 +102,7 @@ const MidStar = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <p className="fz-30 has-black-color">
+                  <p className="has-black-color" style={{fontSize:"1.6rem"}}>
                     Midstar is industry’s recognized leader in the agricultural industry by having a significant impact on the food and feed supply through innovative trade and logistics solutions.realized through synchronized and innovative solutions to supply chain management.
                   </p>
                 </div>

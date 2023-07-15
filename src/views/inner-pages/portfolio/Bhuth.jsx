@@ -186,7 +186,7 @@ const Bhuth = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <p className="fz-30 has-black-color">
+                  <p className="has-black-color" style={{fontSize:"1.6rem"}}>
                   b’huth is an independent public policy research Centre founded in Dubai, UAE in 2002, that focuses on International Affairs, Geo-strategic Affairs, Public Policy Studies and Public Opinion Research. We bring together experts in all these areas to work with us, to learn from one another and to foster creative thinking. Our scholars & Analysts develop practical policy recommendations and offer them to policymakers and stakeholders for political and social improvement as we strive to always bring forward 'actionable knowledge'. Quite often, b’huth is involved in implementing this recommendation.
                   </p>
                 </div>

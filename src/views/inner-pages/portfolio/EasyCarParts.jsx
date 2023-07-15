@@ -176,7 +176,7 @@ const EasyCarParts = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <p className="fz-30 has-black-color">
+                  <p className="has-black-color" style={{fontSize:"1.6rem"}}>
                  EASY CAR PARTS is a Online store for all your car needs.
                   </p>
 

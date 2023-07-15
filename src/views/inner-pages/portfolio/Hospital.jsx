@@ -186,7 +186,7 @@ const Hospital = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <p className="fz-30 has-black-color">
+                  <p className="has-black-color" style={{fontSize:"1.6rem"}}>
                   A premier private healthcare provider in the Middle East, American Hospital, part of Mohamed & Obaid Al Mulla Group, was established in 1996 with the goal of providing world-class medical service to the community. The 254-bed, acute care, general medical/surgical private hospital has state-of-the-art facilities and an experienced team of healthcare professionals specialized in more than 40 medical and surgical specialties assuring comprehensive care. All physicians at American Hospital are American Board Certified or equivalent ensuring that patients receive an international standard of care in the UAE.
                   </p>
                 </div>
@@ -282,7 +282,7 @@ const Hospital = () => {
                     <li>Design & Develop Search Engine with Artificial Intelligence  </li>
                     <li>Test and optimize. </li>
                     </ul><br></br>
-                    <p>We followed step by step methods to develop sleek solution:</p>
+                    <p>Client was extremely satisfied with the outcomes and after so many years we are still running the same search engine solution to make sure the ease of their customers.</p>
                 </div>
 
                 {/* <!--Spacer--> */}

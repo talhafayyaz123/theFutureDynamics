@@ -186,7 +186,7 @@ const Talabat = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <p className="fz-30 has-black-color">
+                  <p className="has-black-color" style={{fontSize:"1.6rem"}}>
                   Talabat is an online food ordering company founded in Kuwait in 2004. As of April 2021, Talabat operates in Kuwait, Saudi Arabia, Bahrain, the United Arab Emirates, Oman, Qatar, Jordan, Egypt, and Iraq.In August 2021, Talabat was selected as the official food delivery provider for Expo Kitchen, and their pavilion would display technological innovations for food delivery, such the cloud kitchen concept, whilst representing multiple food brands. In September 2021, Talabat partnered with Terminus Group, who is also an official premier partner for Expo 2020, to launch ten autonomous, last-mile food-delivery robots for Expo visitors.
                   </p>
                 </div>
@@ -234,7 +234,7 @@ const Talabat = () => {
                   data-aos-delay="0"
                 >
                   <p className="fz-18">
-                  Talabat is an online food ordering company founded in Kuwait in 2004. As of April 2021, Talabat operates in Kuwait, Saudi Arabia, Bahrain, the United Arab Emirates, Oman, Qatar, Jordan, Egypt, and Iraq. In August 2021, Talabat was selected as the official food delivery provider for Expo Kitchen, and their pavilion would display technological innovations for food delivery, such the cloud kitchen concept, whilst representing multiple food brands. In September 2021, Talabat partnered with Terminus Group, who is also an official premier partner for Expo 2020, to launch ten autonomous, last-mile food-delivery robots for Expo visitors.
+                  Talabat has Million of active users on their application, the most important part for any decision making is Data, but in a way that give the decision makers complete understanding within a short eye view.
                   </p>
                 </div>
 

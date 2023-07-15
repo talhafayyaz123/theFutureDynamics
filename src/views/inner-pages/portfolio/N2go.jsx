@@ -30,7 +30,7 @@ const caseStudyContent = [
         dealyAnimation: "200",
         title: "SERVICES",
         subTitle1: `Application Architecture,User Interface/ User Experience,`,
-        subTitle2: "Backend Development,",
+        subTitle2: "Backend Development,Quality Assurance,",
         subTitle3: "Security & Functional Testing",
       },
     ],
@@ -185,7 +185,7 @@ const N2go = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <p className="fz-30 has-black-color">
+                  <p className="has-black-color" style={{fontSize:"1.6rem"}}>
                  Midstar is industry’s recognized leader in the agricultural industry by having a significant impact on the food and feed supply through innovative trade and logistics solutions.realized through synchronized and innovative solutions to supply chain management.
                   </p>
                 </div>

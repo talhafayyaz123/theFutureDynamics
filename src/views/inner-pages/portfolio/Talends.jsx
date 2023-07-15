@@ -186,7 +186,7 @@ const Talends = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <p className="fz-30 has-black-color">
+                  <p className="has-black-color" style={{fontSize:"1.6rem"}}>
                   MENA's Premium Marketplace Provides Hand-Picked Remote Talent & Pre-vetted Agencies. Cost-Effective & Fastest Way To Deliver Your Projects. One of its kind, developed for individuals and agencies that are very talented and at the same time are tired of unjustified and unfair competition in other freelance marketplaces. Present agencies and individuals profiles to local businesses in GCC region.
                   </p>
                 </div>

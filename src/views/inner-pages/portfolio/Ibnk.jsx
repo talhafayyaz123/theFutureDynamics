@@ -8,7 +8,7 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 const imageList = [
   {
-    img: "/assets/img/portfolio/single-work/iBnk.io.png",
+    img: "/assets/img/portfolio/single-work/iBnk_portfolio.png",
     column: "col-lg-12",
     alt: "image 3",
     width: "600",
@@ -186,10 +186,10 @@ const Ibnk = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <p className="fz-30 has-black-color">
+                  <p className="has-black-color" style={{fontSize:"1.6rem"}}>
                   To deliver all kinds of regulated financial products and services from our retail distribution network in an efficient, convenient, trusted, and cost-effective manner backed with robust technology We are a group of experienced bankers with vast industry experience, headquartered in Dubai with a vision and a commitment to branch out to KSA, emerging markets of Middle East, and, Asia & Africa in the near future; with the support and trust of our Partners and Stakeholders.
                   </p>
-                <p className="fz-30 has-black-color">
+                <p className="has-black-color" style={{fontSize:"1.6rem"}}>
                   Our pursuit is to deliver highest standards of superior innovative digital offerings to all our stakeholders globally. It is our endeavour to propel the wave of Digital Transformation initiatives with a view to combining our offerings with emerging technologies by enabling business specific product solutions, catering to banking, financial services and insurance industries.
                   </p>
                 </div>
@@ -274,16 +274,16 @@ const Ibnk = () => {
                   </p><br></br>
 
 
-                    <span>1-Define Objectives and Scope:</span>
-                    <span>2-Conduct Market Research:</span>
-                   <span>3-Design User Experience (UX):</span>
-                    <span>4-Develop Backend Functionality:</span>
-                   <span>5-Implement Frontend Development:</span>
-                    <span>6-Financial Features and Security:</span>
-                   <span>7-Content Management and Compliance:</span>
-                    <span>8-Testing and Quality Assurance:</span>
-                   <span>9-Deploy and Launch:</span>
-                    <span>10-Ongoing Maintenance and Compliance:</span>
+                    <p>1-Define Objectives and Scope:</p>
+                    <p>2-Conduct Market Research:</p>
+                   <p>3-Design User Experience (UX):</p>
+                    <p>4-Develop Backend Functionality:</p>
+                   <p>5-Implement Frontend Development:</p>
+                    <p>6-Financial Features and Security:</p>
+                   <p>7-Content Management and Compliance:</p>
+                    <p>8-Testing and Quality Assurance:</p>
+                   <p>9-Deploy and Launch:</p>
+                    <p>10-Ongoing Maintenance and Compliance:</p>
                 </div>
 
                 {/* <!--Spacer--> */}
