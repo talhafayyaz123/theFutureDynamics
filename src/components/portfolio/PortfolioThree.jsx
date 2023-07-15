@@ -2,38 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const portfolioContent = [
-  {
-    img: "work-1",
-    categorie: "UI/UX",
-    title: "Taskly Dashboard",
-  },
-  {
-    img: "work-2",
-    categorie: "Product",
-    title: "Film & Art Festival",
-  },
-{
-    img: "work-4",
-    categorie: "Illustration",
-    title: "Swiss Style Poster",
-  },
-  {
-    img: "work-3",
-    categorie: "Branding, Packaging",
-    title: "Dark Wishky Wine",
-  },
-
-  {
-    img: "work-5",
-    categorie: "UI/UX",
-    title: "Liarch Architecture Firm",
-  },
-  {
-    img: "work-6",
-    categorie: "UI/UX",
-    title: "Andy Grammer",
-  },
-];
+ { img: "work-1", meta: "Web Design", title: "Mid Star" ,to:'/work/mid-star' },
+      { img: "work-3", meta: "Web Design, Branding", title: "NG20" ,to:'/work/n2go'},
+      { img: "work-5", meta: "Web Design", title: "Bhuth" ,to:'/work/bhuth'},
+      { img: "work-4", meta: "Illustration", title: "American Hospital" ,to:'/work/hospital'},
+      { img: "work-2", meta: "Branding, Motion", title: "Continental" ,to:'/work/continental'},
+      { img: "work-6", meta: "Branding, Motion", title: "Talabat" ,to:'/work/talabat' },
+     ];
 
 const PortfolioThree = () => {
   return (
@@ -50,7 +25,7 @@ const PortfolioThree = () => {
                   loading="lazy"
                 />
               </div>
-              <Link className="ptf-work__meta" to="/works-showcase">
+              <Link className="ptf-work__meta" to={val.to}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

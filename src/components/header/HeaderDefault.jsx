@@ -39,7 +39,7 @@ const HeaderDefault = () => {
               <Link className="ptf-navbar-logo" to="/">
                 <img
                   className="black"
-                 src="assets/img/root/logo-black.png"
+                 src="/assets/img/root/logo-black.png"
                   alt=""
                   loading="lazy"
                 //   style={{"height": "46px"}}

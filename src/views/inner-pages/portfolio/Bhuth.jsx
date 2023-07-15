@@ -8,7 +8,7 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 const imageList = [
   {
-    img: "assets/img/portfolio/single-work/bhuth-web.png",
+    img: "/assets/img/portfolio/single-work/bhuth-web.png",
     column: "col-lg-12",
     alt: "image 3",
     width: "600",
@@ -162,7 +162,7 @@ const Bhuth = () => {
                   <div className="ptf-simple-image">
 
                       <img
-                        src="assets/img/portfolio/single-work/bhuth.png"
+                        src="/assets/img/portfolio/single-work/bhuth.png"
                         alt="work"
                         loading="lazy"
                       />

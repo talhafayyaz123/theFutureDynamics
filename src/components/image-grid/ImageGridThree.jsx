@@ -3,7 +3,7 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 const imageList = [
   {
-    img: "assets/img/portfolio/single-work/content-image-4.png",
+    img: "/assets/img/portfolio/single-work/content-image-4.png",
     column: "col-lg-12",
     alt: "image 3",
     width: "600",

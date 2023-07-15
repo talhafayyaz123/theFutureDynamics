@@ -39,6 +39,11 @@ import Bhuth from "../views/inner-pages/portfolio/Bhuth";
 import Hospital from "../views/inner-pages/portfolio/Hospital";
 import Continental from "../views/inner-pages/portfolio/Continental";
 import Talabat from "../views/inner-pages/portfolio/Talabat";
+import Talends from "../views/inner-pages/portfolio/Talends";
+import Ibnk from "../views/inner-pages/portfolio/Ibnk";
+import Ewt from "../views/inner-pages/portfolio/Ewt";
+import EasyCarParts from "../views/inner-pages/portfolio/EasyCarParts";
+import Frame from "../views/inner-pages/portfolio/Frame";
 
 // Others
 import Contact from "../views/inner-pages/Contact";
@@ -90,12 +95,17 @@ const AllRoutes = () => {
         <Route path="/works-listing" element={<WorksListing />} />
         <Route path="/works-carousel" element={<WorksCarousel />} />
         <Route path="/works-showcase" element={<WorksShowcase />} />
-        <Route path="/mid-star" element={<MidStar />} />
-        <Route path="/n2go" element={<N2go />} />
-        <Route path="/bhuth" element={<Bhuth />} />
-        <Route path="/hospital" element={<Hospital />} />
-        <Route path="/continental" element={<Continental />} />
-        <Route path="/talabat" element={<Talabat />} />
+        <Route path="/work/mid-star" element={<MidStar />} />
+        <Route path="/work/n2go" element={<N2go />} />
+        <Route path="/work/bhuth" element={<Bhuth />} />
+        <Route path="/work/hospital" element={<Hospital />} />
+        <Route path="/work/continental" element={<Continental />} />
+        <Route path="/work/talabat" element={<Talabat />} />
+         <Route path="/work/talends" element={<Talends />} />
+        <Route path="/work/ibnk" element={<Ibnk />} />
+        <Route path="/work/ewt" element={<Ewt />} />
+        <Route path="/work/easy-car-parts" element={<EasyCarParts />} />
+        <Route path="/work/frame" element={<Frame />} />
 
 
         {/* others */}

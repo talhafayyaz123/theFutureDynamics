@@ -4,36 +4,32 @@ import { Link } from "react-router-dom";
 const serviceContent = [
   {
     delayAnimation: "0",
-    title: "Branding",
+    title: "Technology",
     serviceList: [
-      "Brand Strategy",
-      "Consulting",
-      "Illustration",
-      "Graphic Design",
-      "Photography",
+      "Data Analytics - Power BI",
+      "Mobile App Development",
+      "Website Development",
+      "SEO - Search Engine Optimization",
+      "DevOps - AWS/ Azure ",
+      "Security & Functionality Testing/ Quality Assurance",
     ],
   },
   {
     delayAnimation: "100",
-    title: "INTERACTION",
+    title: "Design",
     serviceList: [
-      "Mobile Design",
-      "UI/UX Web Design",
-      "Motion",
-      "Animation",
-      "System Management",
-      "Hosting & Domain",
-      "CRM",
+      "UI - User Interface",
+      "UX - User Experience ",
+      "Graphic Design",
+      "Digital Content Creation",
     ],
   },
   {
     delayAnimation: "200",
-    title: "SOCIAL",
+    title: "Business Growth",
     serviceList: [
-      "Marketing Consult",
-      "Google Ads",
-      "Facebook Ads",
-      "Social Media",
+      "Digital Transformation Roadmapping",
+      "Technology Resource Augmentation",
     ],
   },
 ];
@@ -50,7 +46,7 @@ const ServiceTwo = () => {
             data-aos-delay={item.delayAnimation}
           >
             <h6 className="fz-16 text-uppercase has-3-color fw-normal">
-              Branding
+              {item.title}
             </h6>
             {/* <!--Spacer--> */}
             <div
@@ -61,7 +57,7 @@ const ServiceTwo = () => {
             <ul className="ptf-services-list ptf-services-list--style-2">
               {item.serviceList.map((val, i) => (
                 <li key={i}>
-                  <Link to="/service-details">{val}</Link>
+                  <Link to="/service-details" style={{fontSize:25}}>{val}</Link>
                 </li>
               ))}
             </ul>

@@ -8,7 +8,7 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 const imageList = [
   {
-    img: "/assets/img/portfolio/single-work/N2Go-App-Protfolio.png",
+    img: "/assets/img/portfolio/single-work/iBnk.io.png",
     column: "col-lg-12",
     alt: "image 3",
     width: "600",
@@ -16,22 +16,23 @@ const imageList = [
   },
 ];
 
+
 const caseStudyContent = [
   {
     caseContent: [
       {
         dealyAnimation: "100",
         title: "Platform",
-        subTitle1: "iOS & Android",
-        subTitle2: "",
+        subTitle1: "Website Design",
+        subTitle2: "Desktop Application",
         subTitle3: "",
       },
       {
         dealyAnimation: "200",
         title: "SERVICES",
-        subTitle1: `Application Architecture,User Interface/ User Experience,`,
-        subTitle2: "Backend Development,",
-        subTitle3: "Security & Functional Testing",
+        subTitle1: `Dashboards design & development,Application Architecture,`,
+        subTitle2: `UI/UX,Graphics,Backend Development`,
+        subTitle3: "Hosting Management,Analytics",
       },
     ],
   },
@@ -40,25 +41,26 @@ const caseStudyContent = [
       {
         dealyAnimation: "300",
         title: "Technique Used",
-        subTitle1: `UIKit`,
-        subTitle2: "Core Graphics,",
-        subTitle3: "Native,Flutter",
+        subTitle1: `PHP,Figma,Google Analytics`,
+        subTitle2: "HubSpot Integrations,",
+        subTitle3: "Google Analytics",
       },
       {
         dealyAnimation: "400",
         title: "Industry",
-        subTitle1: `Online, eCommerce & Retail - DIFC Dubai- Mobile App Design & Development`,
+        subTitle1: "Financial App for MENA Region - MENA",
         subTitle2: "",
         subTitle3: "",
       },
     ],
   },
 ];
-const N2go = () => {
+
+const Ibnk = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--work-showcase-1">
       <Helmet>
-        <title>N2GO</title>
+        <title>iBnk.io</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -83,7 +85,7 @@ const N2go = () => {
                       data-aos-delay="0"
                     >
                       <h1 className="large-heading">
-                       N2GO
+                       iBnk.io
                       </h1>
                       {/* <!--Spacer--> */}
                       <div
@@ -102,44 +104,44 @@ const N2go = () => {
                     ></div>
                   </div>
                   {/* End .col */}
-               {caseStudyContent.map((val, i) => (
-                <div className="col-xl-3" key={i}>
-                {/* <!--Spacer--> */}
-                <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
-                {/* <!--Animated Block--> */}
-                {val.caseContent.map((item, i) => (
-                    <div key={i}>
-                    <div
-                        className="ptf-animated-block mb-70"
-                        data-aos="fade"
-                        data-aos-delay={item.dealyAnimation}
-                    >
-                        <h5 className="fz-14 text-uppercase has-3-color fw-normal">
-                        {item.title}
-                        </h5>
+                    {caseStudyContent.map((val, i) => (
+                        <div className="col-xl-3" key={i}>
                         {/* <!--Spacer--> */}
-                        <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.25rem" }}
-                        ></div>
-                        <p className="fz-20 lh-1p5 has-black-color">
-                        {item.subTitle1} <br />
-                        {item.subTitle2} <br />
-                        {item.subTitle3}
-                        </p>
-                    </div>
-                    {/* <!--Spacer--> */}
-                    <div
-                        className="ptf-spacer"
-                        style={{
-                        "--ptf-xxl": " 4.375rem",
-                        "--ptf-md": "2.1875rem",
-                        }}
-                    ></div>
-                    </div>
-                ))}
-                </div>
-            ))}
+                        <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
+                        {/* <!--Animated Block--> */}
+                        {val.caseContent.map((item, i) => (
+                            <div key={i}>
+                            <div
+                                className="ptf-animated-block mb-70"
+                                data-aos="fade"
+                                data-aos-delay={item.dealyAnimation}
+                            >
+                                <h5 className="fz-14 text-uppercase has-3-color fw-normal">
+                                {item.title}
+                                </h5>
+                                {/* <!--Spacer--> */}
+                                <div
+                                className="ptf-spacer"
+                                style={{ "--ptf-xxl": "1.25rem" }}
+                                ></div>
+                                <p className="fz-20 lh-1p5 has-black-color">
+                                {item.subTitle1} <br />
+                                {item.subTitle2} <br />
+                                {item.subTitle3}
+                                </p>
+                            </div>
+                            {/* <!--Spacer--> */}
+                            <div
+                                className="ptf-spacer"
+                                style={{
+                                "--ptf-xxl": " 4.375rem",
+                                "--ptf-md": "2.1875rem",
+                                }}
+                            ></div>
+                            </div>
+                        ))}
+                        </div>
+                    ))}
                 </div>
               </div>
               {/* <!--Spacer--> */}
@@ -159,9 +161,8 @@ const N2go = () => {
                 >
                   {/* <!--Simple Image--> */}
                   <div className="ptf-simple-image">
-
                       <img
-                        src="/assets/img/portfolio/single-work/N2GO.png"
+                        src="/assets/img/portfolio/single-work/iBnk.png"
                         alt="work"
                         loading="lazy"
                       />
@@ -186,7 +187,10 @@ const N2go = () => {
                   data-aos-delay="0"
                 >
                   <p className="fz-30 has-black-color">
-                 Midstar is industry’s recognized leader in the agricultural industry by having a significant impact on the food and feed supply through innovative trade and logistics solutions.realized through synchronized and innovative solutions to supply chain management.
+                  To deliver all kinds of regulated financial products and services from our retail distribution network in an efficient, convenient, trusted, and cost-effective manner backed with robust technology We are a group of experienced bankers with vast industry experience, headquartered in Dubai with a vision and a commitment to branch out to KSA, emerging markets of Middle East, and, Asia & Africa in the near future; with the support and trust of our Partners and Stakeholders.
+                  </p>
+                <p className="fz-30 has-black-color">
+                  Our pursuit is to deliver highest standards of superior innovative digital offerings to all our stakeholders globally. It is our endeavour to propel the wave of Digital Transformation initiatives with a view to combining our offerings with emerging technologies by enabling business specific product solutions, catering to banking, financial services and insurance industries.
                   </p>
                 </div>
 
@@ -233,7 +237,7 @@ const N2go = () => {
                   data-aos-delay="0"
                 >
                   <p className="fz-18">
-                  N2GO is a Successful Salon based in Dubai, they approached us to transform their organization on digital platforms and we offered then to grow their business with a Booking App where people schedule  relaxing time & tailored Makeup, Facial, Nails, Hair, and other parlor services at their home, with a click of a button.
+                 Develop a Website that present the exact image of the offerings of iBnk.io Integration with a financial system. Content management system that generates many transactions on daily basis.
                   </p>
                 </div>
 
@@ -266,14 +270,20 @@ const N2go = () => {
                   data-aos-delay="0"
                 >
                   <p className="fz-18">
-                  The project aimed to develop an online salon services booking application for both Android and iOS platforms, providing users with a convenient way to book appointments at salons. The development team consisted of many members: UI/UX, Designers, Android developer & proficient iOS developer. They collaborated closely throughout the project to ensure a seamless experience across both platforms.
-                    The project began with a comprehensive analysis of the salon industry and user preferences. The team conducted market research, studied existing salon booking apps, and gathered feedback from salon owners and customers. This research formed the basis for creating a unique and user-friendly app concept.<br></br>
-                    Alex focused on developing the Android version of the app, using Java and Kotlin within the Android Studio IDE. Simultaneously worked on the iOS version, utilizing Swift in the Xcode IDE, adhering to Apple's design guidelines and human interface principles. They maintained consistent communication to align the user experience and design elements across both platforms.<br></br>
-                    The development process involved creating a robust backend system to manage salon profiles, services, and appointment scheduling. We integrated APIs for location-based services, secure payment processing, and real-time availability updates.
-                    The app featured a visually appealing interface, intuitive navigation, and personalized user profiles. Users could browse salon listings, view service menus, check availability, and book appointments at their preferred salons. Push notifications were implemented to send reminders and updates to both users and salon owners.<br></br>
-                    Extensive testing was conducted to ensure the app's stability, responsiveness, and compatibility with different devices and operating system versions. The project encompassed market research, backend development, API integration, testing, user feedback incorporation, and successful deployment on the app stores, resulting in a convenient and efficient solution for users seeking salon services.
-                  </p>
+                 Developing a fintech website requires careful planning, security considerations, and attention to regulatory compliance. Here's an overview of the process:
+                  </p><br></br>
 
+
+                    <span>1-Define Objectives and Scope:</span>
+                    <span>2-Conduct Market Research:</span>
+                   <span>3-Design User Experience (UX):</span>
+                    <span>4-Develop Backend Functionality:</span>
+                   <span>5-Implement Frontend Development:</span>
+                    <span>6-Financial Features and Security:</span>
+                   <span>7-Content Management and Compliance:</span>
+                    <span>8-Testing and Quality Assurance:</span>
+                   <span>9-Deploy and Launch:</span>
+                    <span>10-Ongoing Maintenance and Compliance:</span>
                 </div>
 
                 {/* <!--Spacer--> */}
@@ -289,7 +299,7 @@ const N2go = () => {
                   data-aos-delay="0"
                 >
                   {/* <!--Gallery--> */}
-                   <Gallery>
+                  <Gallery>
                 <div
                     className="ptf-justified-gallery row"
                     style={{
@@ -359,4 +369,4 @@ const N2go = () => {
   );
 };
 
-export default N2go;
+export default Ibnk;

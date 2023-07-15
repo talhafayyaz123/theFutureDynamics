@@ -78,7 +78,7 @@ const MidStar = () => {
                   <div className="ptf-simple-image">
 
                       <img
-                        src="assets/img/portfolio/single-work/content-image-1.png"
+                        src="/assets/img/portfolio/single-work/content-image-1.png"
                         alt="work"
                         loading="lazy"
                       />

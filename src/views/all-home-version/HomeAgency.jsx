@@ -330,7 +330,7 @@ const HomeAgency = () => {
                   >
                     <Link
                       className="ptf-circle-link ptf-circle-link--style-2"
-                      to="/works-grid"
+                      to="/work"
                     >
                       All <br />
                       Projects
