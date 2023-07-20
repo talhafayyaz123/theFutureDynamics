@@ -35,7 +35,7 @@ const portfolioContent = [
       { img: "frame", meta: "Illustration", title: "Christy Dawn" ,to:'/work/frame' },
     ],
   },
-  {
+ /*  {
     tabContent: [
       { img: "work-4", meta: "Illustration", title: "American Hospital" ,to:'/work/hospital'},
       { img: "work-2", meta: "Branding, Motion", title: "Continental" ,to:'/work/continental'},
@@ -69,7 +69,7 @@ const portfolioContent = [
       { img: "work-4", meta: "Web Design", title: "Bhuth" ,to:'/work/bhuth'},
       { img: "work-1", meta: "Web Design", title: "Mid Star" ,to:'/work/mid-star' },
     ],
-  },
+  }, */
 ];
 
 const PortfolioSevenMasonry = () => {
@@ -77,7 +77,7 @@ const PortfolioSevenMasonry = () => {
     <>
       <Tabs>
         {/* <!--Animated Block--> */}
-        <div className="ptf-animated-block" data-aos="fade" data-aos-delay="0">
+        {/* <div className="ptf-animated-block" data-aos="fade" data-aos-delay="0">
           <TabList className="ptf-filters ptf-filters--style-1">
             {portfolioMenu.map((item, i) => (
               <Tab className="filter-item " key={i}>
@@ -85,7 +85,7 @@ const PortfolioSevenMasonry = () => {
               </Tab>
             ))}
           </TabList>
-        </div>
+        </div> */}
 
         {/* <!--Spacer--> */}
         <div

@@ -10,6 +10,7 @@ import ServiceTwo from "../../components/service/ServiceTwo";
 import PortfolioThree from "../../components/portfolio/PortfolioThree";
 import BrandTwo from "../../components/brand/BrandTwo";
 
+
 const HomeAgency = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--home-agency">
@@ -235,8 +236,9 @@ const HomeAgency = () => {
                   style={{ "--ptf-xxl": "5.625rem", "--ptf-md": "2.8125rem" }}
                 ></div>
                 <div className="row" style={{ "--bs-gutter-y": "3.75rem" }}>
-                  <ServiceTwo />
-                </div>
+                    <ServiceTwo />
+
+                 </div>
               </div>
 
               {/* <!--Spacer--> */}
@@ -260,6 +262,72 @@ const HomeAgency = () => {
             </section>
             {/* End section devider */}
 
+
+
+               <section>
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "12.5rem", "--ptf-md": "6.25rem" }}
+              ></div>
+              <div className="container text-center">
+                <div className="d-inline-flex text-start">
+                  {/* <!--Animated Block--> */}
+                  <div
+                    className="ptf-animated-block"
+                    data-aos="fade"
+                    data-aos-delay="0"
+                  >
+                    <div className="fz-30">Describe your project</div>
+                    {/* <!--Spacer--> */}
+                    <div
+                      className="ptf-spacer"
+                      style={{ "--ptf-xxl": "1.25rem" }}
+                    ></div>
+                    <div
+                      className="
+                        fz-130
+                        fz-90--md
+                        has-black-color has-secondary-font
+                        fw-normal
+                        lh-1p1
+                      "
+                    >
+                      <Link className="ptf-filled-link" to="/contact">
+                        Call The Future Dynamics
+                      </Link>
+                    </div>
+                    <div className="fz-80 has-black-color">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        style={{ height: "1em" }}
+                        viewBox="0 0 17 17"
+                      >
+                        <path d="M16 .997V10h-1V2.703L4.683 13l-.707-.708L14.291 1.997H6.975v-1H16z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
+              ></div>
+            </section>
+             <section>
+              <div className="container">
+                {/* <!--Divider--> */}
+                <div
+                  className="ptf-divider"
+                  style={{
+                    "--ptf-color": "var(--ptf-color-14)",
+                    "--ptf-height": "1px",
+                  }}
+                ></div>
+              </div>
+            </section>
             {/*=============================================
           Start Latest Works section
           ============================================== */}
