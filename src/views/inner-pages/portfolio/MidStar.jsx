@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Social from "../../../components/social/Social";
 import WorksCaseStudy from "./WorksCaseStudy";
 import ImageGridThree from "../../../components/image-grid/ImageGridThree";
 import HeaderDefault from "../../../components/header/HeaderDefault";
@@ -40,11 +39,7 @@ const MidStar = () => {
                         MIDSTAR MANAGEMENT
                       </h1>
                       {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "4rem", "--ptf-md": "2.5rem" }}
-                      ></div>
-                      <Social />
+
                     </div>
                     {/* <!--Spacer--> */}
                     <div
@@ -75,15 +70,13 @@ const MidStar = () => {
                   data-aos-delay="0"
                 >
                   {/* <!--Simple Image--> */}
-                  <div className="ptf-simple-image">
-
                       <img
                         src="/assets/img/portfolio/single-work/content-image-1.png"
                         alt="work"
                         loading="lazy"
                       />
 
-                  </div>
+
                 </div>
               </div>
             </section>

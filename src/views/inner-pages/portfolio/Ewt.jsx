@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Social from "../../../components/social/Social";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
@@ -88,11 +87,7 @@ const Ewt = () => {
                        Ewt
                       </h1>
                       {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "4rem", "--ptf-md": "2.5rem" }}
-                      ></div>
-                      <Social />
+
                     </div>
                     {/* <!--Spacer--> */}
                     <div
@@ -160,14 +155,14 @@ const Ewt = () => {
                   data-aos-delay="0"
                 >
                   {/* <!--Simple Image--> */}
-                  <div className="ptf-simple-image">
+                  
                       <img
                         src="/assets/img/portfolio/single-work/perfect_mob_app.png"
                         alt="work"
                         loading="lazy"
                       />
 
-                  </div>
+
                 </div>
               </div>
             </section>
@@ -372,7 +367,7 @@ const Ewt = () => {
                     {imageList.map((val, i) => (
                     <div className={val.column} key={i}>
                         <div className="ptf-gallery__item">
-                        <div className="ptf-simple-image">
+
                             <Item
                             original={val.img}
                             thumbnail={val.img}
@@ -389,7 +384,7 @@ const Ewt = () => {
                                 />
                             )}
                             </Item>
-                        </div>
+
                         </div>
                     </div>
                     ))}

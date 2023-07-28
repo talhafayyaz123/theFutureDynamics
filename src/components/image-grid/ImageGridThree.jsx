@@ -24,7 +24,6 @@ const ImageGridThree = () => {
         {imageList.map((val, i) => (
           <div className={val.column} key={i}>
             <div className="ptf-gallery__item">
-              <div className="ptf-simple-image">
                 <Item
                   original={val.img}
                   thumbnail={val.img}
@@ -41,7 +40,7 @@ const ImageGridThree = () => {
                     />
                   )}
                 </Item>
-              </div>
+
             </div>
           </div>
         ))}
