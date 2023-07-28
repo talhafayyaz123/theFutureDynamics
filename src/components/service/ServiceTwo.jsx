@@ -10,6 +10,9 @@ const [isQa, setIsQa] = useState(false);
 const [isUiInterface, setUiInterface] = useState(false);
 const [isUxInterface, setUxInterface] = useState(false);
 const [isGraphics, setIsGraphics] = useState(false);
+const [isDigital, setIsDigital] = useState(false);
+const [isTransform, setIsTransform] = useState(false);
+const [isResource, setIsResource] = useState(false);
 
   return (
     <>
@@ -136,28 +139,29 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 <p class="text-center" style={{color: isGraphics ? 'white' : 'black',"font-weight":'500'}}>Graphic design is the practice of composing and arranging the visual elements of a project.</p>
 </a></div>
 
-{/*
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" style={{ "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
+
+<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsDigital(true)} onMouseLeave={() => setIsDigital(false)} style={{backgroundColor: isDigital ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
- <img src={`assets/img/home/studio/digital.svg`} alt="UI/UX" style={{ "width": "18%","margin-top": "7%","margin-left": "71%",'display':'block'}}/>
+ <img src={`assets/img/home/studio/digital.svg`} alt="UI/UX" style={{backgroundColor: isDigital ? 'white' : '', "width": "18%","margin-top": "7%","margin-left": "71%",'display':'block'}}/>
 
-<p  class="text-left service_small_heading" style={{ "color": "rgb(0, 0, 0)","font-weight":'900','paddingLeft':'6%','position':'relative','bottom':'50px'}}>Digital Content Creation</p>
+<p  class="text-left service_small_heading" style={{color: isDigital ? 'white' : 'black',"font-weight":'900','paddingLeft':'6%','position':'relative','bottom':'50px'}}>Digital Content Creation</p>
 
-<p class="text-center" style={{ "color": "rgb(0, 0, 0)","font-weight":'500'}}>Content creation is the act of producing and sharing information or media content for specific audiences, particularly in digital contexts.</p>
+<p class="text-center" style={{color: isDigital ? 'white' : 'black',"font-weight":'500'}}>Content creation is the act of producing and sharing information or media content for specific audiences, particularly in digital contexts.</p>
 
 </a></div>
 
 
 
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" style={{ "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
+<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsTransform(true)} onMouseLeave={() => setIsTransform(false)}
+ style={{ backgroundColor: isTransform ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
-<img src={`assets/img/home/studio/content-creator.png`} alt="UI/UX" style={{ "width": "18%","margin-top": "7%","margin-left": "71%",'display':'block'}}/>
+<img src={`assets/img/home/studio/content-creator.png`} alt="UI/UX" style={{backgroundColor: isTransform ? 'white' : '', "width": "18%","margin-top": "7%","margin-left": "71%",'display':'block'}}/>
 
-<p class="text-left service_small_heading" style={{ "color": "rgb(0, 0, 0)","font-weight":'900','paddingLeft':'6%','position':'relative','bottom':'50px'}}>Digital Transformation</p>
+<p class="text-left service_small_heading" style={{ color: isTransform ? 'white' : 'black',"font-weight":'900','paddingLeft':'6%','position':'relative','bottom':'50px'}}>Digital Transformation</p>
 
-<p class="text-center" style={{ "color": "rgb(0, 0, 0)","font-weight":'500'}}>It is a comprehensive plan that moves your organization or department from point A of using your current digital tools and processes to point B of using newer digital and tech tools. .</p>
+<p class="text-center" style={{ color: isTransform ? 'white' : 'black',"font-weight":'500'}}>It is a comprehensive plan that moves your organization or department from point A of using your current digital tools and processes to point B of using newer digital and tech tools. .</p>
 
 </a></div>
 
@@ -165,17 +169,17 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 
 
 
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" style={{ "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
+<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsResource(true)} onMouseLeave={() => setIsResource(false)} style={{  backgroundColor: isResource ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
- <img src={`assets/img/home/studio/icons8-people-50.png`} alt="UI/UX" style={{ "width": "19%","margin-top": "7%","margin-left": "71%",'display':'block'}}/>
+ <img src={`assets/img/home/studio/icons8-people-50.png`} alt="UI/UX" style={{backgroundColor: isResource ? 'white' : '', "width": "19%","margin-top": "7%","margin-left": "71%",'display':'block'}}/>
 
-<p  class="text-left service_small_heading" style={{ "color": "rgb(0, 0, 0)","font-weight":'900','paddingLeft':'6%','position':'relative','bottom':'50px'}}>Resource Augmentation</p>
+<p  class="text-left service_small_heading" style={{  color: isResource ? 'white' : 'black',"font-weight":'900','paddingLeft':'6%','position':'relative','bottom':'50px'}}>Resource Augmentation</p>
 
-<p class="text-center" style={{ "color": "rgb(0, 0, 0)","font-weight":'500'}}>Resource augmentation is an agile, cost-effective, and flexible outsourcing strategy that allows businesses to hire third-party top tech talent on a contractual basis for a specific project or various projects.</p>
+<p class="text-center" style={{color: isResource ? 'white' : 'black',"font-weight":'500'}}>Resource augmentation is an agile, cost-effective, and flexible outsourcing strategy that allows businesses to hire third-party top tech talent on a contractual basis for a specific project or various projects.</p>
 
 </a></div>
- */}
+
     </>
   );
 };
