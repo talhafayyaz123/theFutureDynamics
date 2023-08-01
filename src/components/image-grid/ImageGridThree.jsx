@@ -1,5 +1,5 @@
 import React from "react";
-import { Gallery, Item } from "react-photoswipe-gallery";
+import { Item } from "react-photoswipe-gallery";
 
 const imageList = [
   {
@@ -13,7 +13,7 @@ const imageList = [
 
 const ImageGridThree = () => {
   return (
-    <Gallery>
+
       <div
         className="ptf-justified-gallery row"
         style={{
@@ -45,7 +45,7 @@ const ImageGridThree = () => {
           </div>
         ))}
       </div>
-    </Gallery>
+
   );
 };
 

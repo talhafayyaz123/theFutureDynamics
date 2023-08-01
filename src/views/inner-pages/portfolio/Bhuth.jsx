@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
-import { Gallery, Item } from "react-photoswipe-gallery";
+import { Item } from "react-photoswipe-gallery";
 
 const imageList = [
   {
@@ -288,7 +288,7 @@ const Bhuth = () => {
                   data-aos-delay="0"
                 >
                   {/* <!--Gallery--> */}
-                  <Gallery>
+                
                 <div
                     className="ptf-justified-gallery row"
                     style={{
@@ -320,7 +320,6 @@ const Bhuth = () => {
                     </div>
                     ))}
                 </div>
-                </Gallery>
                 </div>
               </div>
             </section>
