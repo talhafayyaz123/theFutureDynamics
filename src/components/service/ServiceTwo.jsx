@@ -28,7 +28,6 @@ onMouseLeave={() => setIsPower(false)}  style={{backgroundColor: isPower ? 'blac
 :  <img src={`assets/img/home/studio/power_bi.png`} alt="UI/UX" style={{ "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
 
 }
-
 <p className="text-left service_small_heading" style={{"font-weight":'900','paddingLeft':'14%','position':'relative',
     'bottom':'32px',color: isPower ? 'white' : 'black'}}>Data Analytics-Power BI</p>
 
