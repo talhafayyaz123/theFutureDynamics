@@ -18,12 +18,16 @@ const [isResource, setIsResource] = useState(false);
     <>
 
 <div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsPower(true)}
-    onMouseLeave={() => setIsPower(false)}  style={{backgroundColor: isPower ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)",
+onMouseLeave={() => setIsPower(false)}  style={{backgroundColor: isPower ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)",
     "padding": " 0px"
     }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
- <img src={`assets/img/home/studio/power_bi.png`} alt="UI/UX" style={{ "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+ {isPower ?  <img src={`assets/img/home/studio/power_bi_white.png`} alt="UI/UX" style={{ "width": "10%","margin-top": "4%","margin-left": "83%",'display':'block'}}/>
+
+:  <img src={`assets/img/home/studio/power_bi.png`} alt="UI/UX" style={{ "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+
+}
 
 <p className="text-left service_small_heading" style={{"font-weight":'900','paddingLeft':'14%','position':'relative',
     'bottom':'32px',color: isPower ? 'white' : 'black'}}>Data Analytics-Power BI</p>
@@ -39,7 +43,10 @@ const [isResource, setIsResource] = useState(false);
     "padding": " 0px"
     }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
- <img src={`assets/img/home/studio/ux.svg`} alt="UI/UX" style={{backgroundColor: isApp ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+
+{isApp  ?  <img src={`assets/img/home/studio/ux-white.png`} alt="UI/UX" style={{backgroundColor: isApp ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+   : <img src={`assets/img/home/studio/ux.svg`} alt="UI/UX" style={{backgroundColor: isApp ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+}
 
 <p class="text-left service_small_heading" style={{"font-weight":'900','paddingLeft':'11%','position':'relative',
     'bottom':'44px',color: isApp ? 'white' : 'black'}}>Mobile App Development</p>
@@ -55,9 +62,11 @@ Mobile application development is the set of processes and procedures involved i
 style={{backgroundColor: isWeb ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
- <img src={`assets/img/home/studio/website.svg`} alt="UI/UX" style={{backgroundColor: isWeb ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+{ isWeb ?   <img src={`assets/img/home/studio/website-white.png`} alt="UI/UX" style={{backgroundColor: isWeb ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+:  <img src={`assets/img/home/studio/website.jpg`} alt="UI/UX" style={{backgroundColor: isWeb ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+}
 
-<p class="text-left service_small_heading" style={{color: isWeb ? 'white' : 'black',"font-weight":'900','paddingLeft':'16%','position':'relative','bottom':'45px'}}>Website Development</p>
+<p class="text-left service_small_heading" style={{color: isWeb ? 'white' : 'black',"font-weight":'900','paddingLeft':'16%','position':'relative','bottom':'25px'}}>Website Development</p>
 
 <p class="text-center" style={{ "font-weight":'500',color: isWeb ? 'white' : 'black'}}>Web development usually refers to the main non-design aspects of building Web sites: writing markup and coding.</p>
 
@@ -69,7 +78,10 @@ style={{backgroundColor: isWeb ? 'black' : 'white', "border": "0.5px solid rgb(2
 style={{backgroundColor: isSeo ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
- <img src={`assets/img/home/studio/seo.svg`} alt="UI/UX" style={{backgroundColor: isSeo ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+
+{isSeo  ?  <img src={`assets/img/home/studio/seo-white.png`} alt="UI/UX" style={{backgroundColor: isSeo ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+ :  <img src={`assets/img/home/studio/seo.svg`} alt="UI/UX" style={{backgroundColor: isSeo ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+}
 
 <p class="text-left service_small_heading" style={{ color: isSeo ? 'white' : 'black',"font-weight":'900','paddingLeft':'9%','position':'relative','bottom':'45px'}}>Search Engine Optimization</p>
 
@@ -81,7 +93,10 @@ style={{backgroundColor: isSeo ? 'black' : 'white', "border": "0.5px solid rgb(2
 
 <div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsDevops(true)} onMouseLeave={() => setIsDevops(false)} style={{backgroundColor: isDevops ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
- <img src={`assets/img/home/studio/aws.svg`} alt="UI/UX" style={{ backgroundColor: isDevops ? 'white' : '',"width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+ 
+ {isDevops  ?  <img src={`assets/img/home/studio/aws-white.png`} alt="UI/UX" style={{ backgroundColor: isDevops ? 'white' : '',"width": "17%","margin-top": "4%","margin-left": "78%",'display':'block'}}/>
+:  <img src={`assets/img/home/studio/aws.svg`} alt="UI/UX" style={{ backgroundColor: isDevops ? 'white' : '',"width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+}
 
 <p class="text-left service_small_heading" style={{ color: isDevops ? 'white' : 'black',"font-weight":'900','paddingLeft':'18%','position':'relative','bottom':'37px'}}>DevOps - AWS/ Azure</p>
 
@@ -95,7 +110,14 @@ style={{backgroundColor: isSeo ? 'black' : 'white', "border": "0.5px solid rgb(2
 <div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsQa(true)} onMouseLeave={() => setIsQa(false)}
 style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
- <img src={`assets/img/home/studio/quality-assurance.jpg`} alt="UI/UX" style={{backgroundColor: isQa ? 'white' : '', "width": "9%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+
+
+
+{isQa ?  <img src={`assets/img/home/studio/quality-assurance_white.jpg`} alt="UI/UX" style={{backgroundColor: isQa ? 'white' : '', "width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/> 
+
+:  <img src={`assets/img/home/studio/quality-assurance.jpg`} alt="UI/UX" style={{backgroundColor: isQa ? 'white' : '', "width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/> 
+
+}
 
 <p class="text-left service_small_heading" style={{color: isQa ? 'white' : 'black',"font-weight":'900','paddingLeft':'22%','position':'relative','bottom':'31px'}}>Quality Assurance</p>
 
@@ -107,7 +129,11 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 <div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setUiInterface(true)} onMouseLeave={() => setUiInterface(false)}  style={{backgroundColor: isUiInterface ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
- <img src={`assets/img/home/studio/design.png`} alt="UI/UX"  style={{ backgroundColor: isUiInterface ? 'white' : '',"width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+{isUiInterface ?  <img src={`assets/img/home/studio/design_white.png`} alt="UI/UX"  style={{ backgroundColor: isUiInterface ? 'white' : '',"width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+
+:  <img src={`assets/img/home/studio/design.png`} alt="UI/UX"  style={{ backgroundColor: isUiInterface ? 'white' : '',"width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+
+}
 
 <p class="text-left service_small_heading" style={{color: isUiInterface ? 'white' : 'black', "font-weight":'900','paddingLeft':'22%','position':'relative','bottom':'32px'}}>UI - User Interface</p>
 
@@ -120,7 +146,11 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 <div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setUxInterface(true)} onMouseLeave={() => setUxInterface(false)} style={{backgroundColor: isUxInterface ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
- <img src={`assets/img/home/studio/ux-design.png`} alt="UI/UX" style={{backgroundColor: isUxInterface ? 'white' : '', "width": "11%","margin-top": "4%","margin-left": "78%",'display':'block'}}/>
+{isUxInterface ? <img src={`assets/img/home/studio/ux-design-white.png`} alt="UI/UX" style={{backgroundColor: isUxInterface ? 'white' : '', "width": "11%","margin-top": "4%","margin-left": "78%",'display':'block'}}/>
+
+:  <img src={`assets/img/home/studio/ux-design.png`} alt="UI/UX" style={{backgroundColor: isUxInterface ? 'white' : '', "width": "11%","margin-top": "4%","margin-left": "78%",'display':'block'}}/>
+
+}
 
 <p class="text-left service_small_heading" style={{color: isUxInterface ? 'white' : 'black',"font-weight":'900','paddingLeft':'19%','position':'relative','bottom':'32px'}}>UX - User Experience</p>
 
@@ -132,7 +162,10 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 <div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsGraphics(true)} onMouseLeave={() => setIsGraphics(false)} style={{backgroundColor: isGraphics ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
- <img src={`assets/img/home/studio/graphics-design.png`} alt="UI/UX" style={{backgroundColor: isGraphics ? 'white' : '',  "width": "11%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
+{isGraphics ?  <img src={`assets/img/home/studio/graphics-design-white.png`} alt="UI/UX" style={{backgroundColor: isGraphics ? 'white' : '',  "width": "11%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
+  :  <img src={`assets/img/home/studio/graphics-design.png`} alt="UI/UX" style={{backgroundColor: isGraphics ? 'white' : '',  "width": "11%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
+}
+
 
 <p class="text-left service_small_heading" style={{color: isGraphics ? 'white' : 'black',"font-weight":'900','paddingLeft':'28%','position':'relative','bottom':'33px'}}>Graphic Design</p>
 
@@ -143,7 +176,9 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 <div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsDigital(true)} onMouseLeave={() => setIsDigital(false)} style={{backgroundColor: isDigital ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
- <img src={`assets/img/home/studio/digital.svg`} alt="UI/UX" style={{backgroundColor: isDigital ? 'white' : '', "width": "11%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
+{isDigital ?   <img src={`assets/img/home/studio/digital-white.png`} alt="UI/UX" style={{backgroundColor: isDigital ? 'white' : '', "width": "13%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
+:  <img src={`assets/img/home/studio/digital.png`} alt="UI/UX" style={{backgroundColor: isDigital ? 'white' : '', "width": "13%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
+}
 
 <p  class="text-left service_small_heading" style={{color: isDigital ? 'white' : 'black',"font-weight":'900','paddingLeft':'14%','position':'relative','bottom':'41px'}}>Digital Content Creation</p>
 
@@ -157,7 +192,10 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
  style={{ backgroundColor: isTransform ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
-<img src={`assets/img/home/studio/content-creator.png`} alt="UI/UX" style={{backgroundColor: isTransform ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
+
+{isTransform  ? <img src={`assets/img/home/studio/content-creator-white.png`} alt="UI/UX" style={{backgroundColor: isTransform ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
+  : <img src={`assets/img/home/studio/content-creator.png`} alt="UI/UX" style={{backgroundColor: isTransform ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
+}
 
 <p class="text-left service_small_heading" style={{ color: isTransform ? 'white' : 'black',"font-weight":'900','paddingLeft':'17%','position':'relative','bottom':'37px'}}>Digital Transformation</p>
 
@@ -170,7 +208,10 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 <div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsResource(true)} onMouseLeave={() => setIsResource(false)} style={{  backgroundColor: isResource ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
- <img src={`assets/img/home/studio/icons8-people-50.png`} alt="UI/UX" style={{backgroundColor: isResource ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "78%",'display':'block'}}/>
+
+{isResource ? <img src={`assets/img/home/studio/resource-white.png`} alt="UI/UX" style={{backgroundColor: isResource ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "78%",'display':'block'}}/>
+: <img src={`assets/img/home/studio/resource.png`} alt="UI/UX" style={{backgroundColor: isResource ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "78%",'display':'block'}}/>
+}
 
 <p  class="text-left service_small_heading" style={{  color: isResource ? 'white' : 'black',"font-weight":'900','paddingLeft':'14%','position':'relative','bottom':'35px'}}>Resource Augmentation</p>
 
