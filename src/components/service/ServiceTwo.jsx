@@ -1,25 +1,26 @@
 import React,{ useState } from "react";
+import { Link } from "react-router-dom";
 
 const ServiceTwo = () => {
-const [isPower, setIsPower] = useState(false);
+// const [isPower, setIsPower] = useState(false);
 const [isApp, setIsApp] = useState(false);
 const [isWeb, setIsWeb] = useState(false);
 const [isSeo, setIsSeo] = useState(false);
-const [isDevops, setIsDevops] = useState(false);
+// const [isDevops, setIsDevops] = useState(false);
 const [isQa, setIsQa] = useState(false);
 const [isUiInterface, setUiInterface] = useState(false);
 const [isUxInterface, setUxInterface] = useState(false);
-const [isGraphics, setIsGraphics] = useState(false);
+// const [isGraphics, setIsGraphics] = useState(false);
 const [isDigital, setIsDigital] = useState(false);
 const [isTransform, setIsTransform] = useState(false);
 const [isResource, setIsResource] = useState(false);
 
   return (
     <>
-
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsPower(true)}
+{/* 
+ <div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setIsPower(true)}
 onMouseLeave={() => setIsPower(false)}  style={{backgroundColor: isPower ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)",
-    "padding": " 0px"
+    "padding": " 28px"
     }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
@@ -31,66 +32,13 @@ onMouseLeave={() => setIsPower(false)}  style={{backgroundColor: isPower ? 'blac
 <p className="text-left service_small_heading" style={{"font-weight":'900','paddingLeft':'14%','position':'relative',
     'bottom':'32px',color: isPower ? 'white' : 'black'}}>Data Analytics-Power BI</p>
 
-<p className="text-center" style={{"color": "rgb(0, 0, 0)","font-weight":'500',color: isPower ? 'white' : 'black'}}>Power BI plays an important role to visualize your Data that helps to take business decisions.</p>
+<p className="text-center" style={{"font-weight":'500',color: isPower ? 'white' : 'black'}}>Power BI plays an important role to visualize your Data that helps to take business decisions.</p>
 </a>
 
-</div>
+</div> 
 
 
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsApp(true)}
-    onMouseLeave={() => setIsApp(false)} style={{backgroundColor: isApp ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)",
-    "padding": " 0px"
-    }}>
-<a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
-
-{isApp  ?  <img src={`assets/img/home/studio/ux-white.png`} alt="UI/UX" style={{backgroundColor: isApp ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
-   : <img src={`assets/img/home/studio/ux.svg`} alt="UI/UX" style={{backgroundColor: isApp ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
-}
-
-<p class="text-left service_small_heading" style={{"font-weight":'900','paddingLeft':'11%','position':'relative',
-    'bottom':'44px',color: isApp ? 'white' : 'black'}}>Mobile App Development</p>
-
-<p class="text-center" style={{"font-weight":'500',color: isApp ? 'white' : 'black'}}>
-Mobile application development is the set of processes and procedures involved in writing software for small, wireless computing devices etc.</p>
-
-</a></div>
-
-
-
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsWeb(true)} onMouseLeave={() => setIsWeb(false)}
-style={{backgroundColor: isWeb ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
-<a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
-
-{ isWeb ?   <img src={`assets/img/home/studio/website-white.png`} alt="UI/UX" style={{backgroundColor: isWeb ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
-:  <img src={`assets/img/home/studio/website.jpg`} alt="UI/UX" style={{backgroundColor: isWeb ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
-}
-
-<p class="text-left service_small_heading" style={{color: isWeb ? 'white' : 'black',"font-weight":'900','paddingLeft':'16%','position':'relative','bottom':'25px'}}>Website Development</p>
-
-<p class="text-center" style={{ "font-weight":'500',color: isWeb ? 'white' : 'black'}}>Web development usually refers to the main non-design aspects of building Web sites: writing markup and coding.</p>
-
-</a></div>
-
-
-
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsSeo(true)} onMouseLeave={() => setIsSeo(false)}
-style={{backgroundColor: isSeo ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
-<a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
-
-
-{isSeo  ?  <img src={`assets/img/home/studio/seo-white.png`} alt="UI/UX" style={{backgroundColor: isSeo ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
- :  <img src={`assets/img/home/studio/seo.svg`} alt="UI/UX" style={{backgroundColor: isSeo ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
-}
-
-<p class="text-left service_small_heading" style={{ color: isSeo ? 'white' : 'black',"font-weight":'900','paddingLeft':'9%','position':'relative','bottom':'45px'}}>Search Engine Optimization</p>
-
-<p class="text-center" style={{color: isSeo ? 'white' : 'black',"margin-top": "9%","font-weight":'500'}}>Search engine optimization is a set of technical and content practices aimed at aligning a website page with a search engine's ranking algorithm.</p>
-
-</a></div>
-
-
-
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsDevops(true)} onMouseLeave={() => setIsDevops(false)} style={{backgroundColor: isDevops ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
+<div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setIsDevops(true)} onMouseLeave={() => setIsDevops(false)} style={{backgroundColor: isDevops ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 28px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
  
  {isDevops  ?  <img src={`assets/img/home/studio/aws-white.png`} alt="UI/UX" style={{ backgroundColor: isDevops ? 'white' : '',"width": "17%","margin-top": "4%","margin-left": "78%",'display':'block'}}/>
@@ -102,63 +50,110 @@ style={{backgroundColor: isSeo ? 'black' : 'white', "border": "0.5px solid rgb(2
 <p class="text-center" style={{color: isDevops ? 'white' : 'black',"margin-top": "13%","font-weight":'500'}}>The AWS Toolkit for Azure DevOps is an extension for hosted and on-premises Microsoft Azure DevOps that make it easy to manage and deploy applications using AWS.</p>
 
 </a></div>
+*/}
 
 
+<div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setIsApp(true)}
+    onMouseLeave={() => setIsApp(false)} style={{backgroundColor: isApp ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)",
+    "padding": " 28px"
+    }}>
 
+<Link  to="/service/mobile-app-development" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsQa(true)} onMouseLeave={() => setIsQa(false)}
-style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
-<a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
-
-
-
-{isQa ?  <img src={`assets/img/home/studio/quality-assurance_white.jpg`} alt="UI/UX" style={{backgroundColor: isQa ? 'white' : '', "width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/> 
-
-:  <img src={`assets/img/home/studio/quality-assurance.jpg`} alt="UI/UX" style={{backgroundColor: isQa ? 'white' : '', "width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/> 
-
+{isApp  ?  <img src={`assets/img/home/studio/ux-white.png`} alt="UI/UX" style={{backgroundColor: isApp ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+   : <img src={`assets/img/home/studio/ux.svg`} alt="UI/UX" style={{backgroundColor: isApp ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
 }
 
-<p class="text-left service_small_heading" style={{color: isQa ? 'white' : 'black',"font-weight":'900','paddingLeft':'22%','position':'relative','bottom':'31px'}}>Quality Assurance</p>
+<p class="text-left service_small_heading" style={{"font-weight":'900','paddingLeft':'11%','position':'relative',
+    'bottom':'44px',color: isApp ? 'white' : 'black'}}>Mobile App Development</p>
 
-<p  class="text-center" style={{ color: isQa ? 'white' : 'black',"margin-top": "13%","font-weight":'500'}}>Security Testing is a type of Software Testing that uncovers vulnerabilities of the system and determines that the data and resources of the system are protected from possible.</p>
+<p class="text-center" style={{"font-weight":'500',color: isApp ? 'white' : 'black'}}>
+Our developed Mobile Apps offer enhanced user-engagement, accessibility, brand visibility, direct communication, data insights, customer loyalty & monetization.</p>
+</Link>
 
-</a></div>
+</div>
 
 
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setUiInterface(true)} onMouseLeave={() => setUiInterface(false)}  style={{backgroundColor: isUiInterface ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
-<a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
-{isUiInterface ?  <img src={`assets/img/home/studio/design_white.png`} alt="UI/UX"  style={{ backgroundColor: isUiInterface ? 'white' : '',"width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+<div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setIsWeb(true)} onMouseLeave={() => setIsWeb(false)}
+style={{backgroundColor: isWeb ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 28px" }}>
+<Link  to="/service/website-development" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
+
+{ isWeb ?   <img src={`assets/img/home/studio/website-white.png`} alt="UI/UX" style={{backgroundColor: isWeb ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+:  <img src={`assets/img/home/studio/website.jpg`} alt="UI/UX" style={{backgroundColor: isWeb ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+}
+
+<p class="text-left service_small_heading" style={{color: isWeb ? 'white' : 'black',"font-weight":'900','paddingLeft':'16%','position':'relative','bottom':'25px'}}>Website Development</p>
+
+<p class="text-center" style={{ "font-weight":'500',color: isWeb ? 'white' : 'black'}}>Strategic online assets that align with your business goals, whether it's to attract customers, drive sales, or share your message</p>
+
+</Link></div>
+
+
+
+<div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setIsSeo(true)} onMouseLeave={() => setIsSeo(false)}
+style={{backgroundColor: isSeo ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 28px" }}>
+<Link  to="/service/seo" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
+
+{isSeo  ?  <img src={`assets/img/home/studio/seo-white.png`} alt="UI/UX" style={{backgroundColor: isSeo ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+ :  <img src={`assets/img/home/studio/seo.svg`} alt="UI/UX" style={{backgroundColor: isSeo ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+}
+
+<p class="text-left service_small_heading" style={{ color: isSeo ? 'white' : 'black',"font-weight":'900','paddingLeft':'9%','position':'relative','bottom':'45px'}}>Search Engine Optimization</p>
+
+<p class="text-center" style={{color: isSeo ? 'white' : 'black',"margin-top": "9%","font-weight":'500'}}>Our digital marketers make sure our SEO is done right that increases traffic, organic traffic, more leads, conversions, and revenue for their business.</p>
+
+</Link></div>
+
+
+<div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setIsQa(true)} onMouseLeave={() => setIsQa(false)}
+style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 28px" }}>
+<Link  to="/service/performance-marketing" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
+
+{isQa ?  <img src={`assets/img/home/studio/performance_marketing-white.png`} alt="UI/UX" style={{backgroundColor: isQa ? 'white' : '', "width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
+:  <img src={`assets/img/home/studio/performance_marketing.png`} alt="UI/UX" style={{backgroundColor: isQa ? 'white' : '', "width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/> 
+}
+<p class="text-left service_small_heading" style={{color: isQa ? 'white' : 'black',"font-weight":'900','paddingLeft':'22%','position':'relative','bottom':'31px'}}>Performance Marketing</p>
+<p  class="text-center" style={{ color: isQa ? 'white' : 'black',"margin-top": "13%","font-weight":'500'}}>ROI based performance marketing is done right after listening to your business goals, understanding specific needs & custom strategies.</p>
+</Link></div>
+
+
+<div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setUiInterface(true)} onMouseLeave={() => setUiInterface(false)}  style={{backgroundColor: isUiInterface ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 28px" }}>
+<Link  to="/service/ui-ux" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
+
+{isUiInterface ? 
+ <img src={`assets/img/home/studio/design_white.png`} alt="UI/UX"  style={{ backgroundColor: isUiInterface ? 'white' : '',"width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
 
 :  <img src={`assets/img/home/studio/design.png`} alt="UI/UX"  style={{ backgroundColor: isUiInterface ? 'white' : '',"width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
 
 }
 
-<p class="text-left service_small_heading" style={{color: isUiInterface ? 'white' : 'black', "font-weight":'900','paddingLeft':'22%','position':'relative','bottom':'32px'}}>UI - User Interface</p>
+<p class="text-left service_small_heading" style={{color: isUiInterface ? 'white' : 'black', "font-weight":'900','paddingLeft':'22%','position':'relative','bottom':'32px'}}>UI/UX</p>
 
-<p  class="text-center" style={{ color: isUiInterface ? 'white' : 'black',"margin-top": "13%","font-weight":'500'}}>User interface (UI) design is the process designers use to build interfaces in software or computerized devices, focusing on looks or style.</p>
+<p  class="text-center" style={{ color: isUiInterface ? 'white' : 'black',"margin-top": "13%","font-weight":'500'}}>Our user-centric approach & well-crafted UI/UX smooth your user experience journey, increase conversions, reduce bounce rate and are responsive to all devices.
+</p>
 
-</a></div>
+</Link></div>
 
 
 
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setUxInterface(true)} onMouseLeave={() => setUxInterface(false)} style={{backgroundColor: isUxInterface ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
-<a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
+<div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setUxInterface(true)} onMouseLeave={() => setUxInterface(false)} style={{backgroundColor: isUxInterface ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 28px" }}>
+<Link  to="/service/e-commerce" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
-{isUxInterface ? <img src={`assets/img/home/studio/ux-design-white.png`} alt="UI/UX" style={{backgroundColor: isUxInterface ? 'white' : '', "width": "11%","margin-top": "4%","margin-left": "78%",'display':'block'}}/>
+{isUxInterface ? <img src={`assets/img/home/studio/e-commerce-white.png`} alt="UI/UX" style={{backgroundColor: isUxInterface ? 'white' : '', "width": "11%","margin-top": "4%","margin-left": "78%",'display':'block'}}/>
 
-:  <img src={`assets/img/home/studio/ux-design.png`} alt="UI/UX" style={{backgroundColor: isUxInterface ? 'white' : '', "width": "11%","margin-top": "4%","margin-left": "78%",'display':'block'}}/>
+:  <img src={`assets/img/home/studio/e-commerce.png`} alt="UI/UX" style={{backgroundColor: isUxInterface ? 'white' : '', "width": "11%","margin-top": "4%","margin-left": "78%",'display':'block'}}/>
 
 }
 
-<p class="text-left service_small_heading" style={{color: isUxInterface ? 'white' : 'black',"font-weight":'900','paddingLeft':'19%','position':'relative','bottom':'32px'}}>UX - User Experience</p>
+<p class="text-left service_small_heading" style={{color: isUxInterface ? 'white' : 'black',"font-weight":'900','paddingLeft':'19%','position':'relative','bottom':'32px'}}>E-Commerce</p>
 
-<p  class="text-center" style={{ color: isUxInterface ? 'white' : 'black',"margin-top": "13%","font-weight":'500'}}>User experience design is the process of defining the experience a user would go through when interacting with a company, its services, and its products.</p>
+<p  class="text-center" style={{ color: isUxInterface ? 'white' : 'black',"margin-top": "13%","font-weight":'500'}}>The world of commerce is evolving rapidly, and the shift to e-commerce is no longer an option but a strategic imperative for businesses of all sizes and industries.</p>
 
-</a></div>
+</Link></div>
 
 
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsGraphics(true)} onMouseLeave={() => setIsGraphics(false)} style={{backgroundColor: isGraphics ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
+{/* <div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setIsGraphics(true)} onMouseLeave={() => setIsGraphics(false)} style={{backgroundColor: isGraphics ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 28px" }}>
 <a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
 {isGraphics ?  <img src={`assets/img/home/studio/graphics-design-white.png`} alt="UI/UX" style={{backgroundColor: isGraphics ? 'white' : '',  "width": "11%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
@@ -170,10 +165,10 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 
 <p class="text-center" style={{color: isGraphics ? 'white' : 'black',"font-weight":'500'}}>Graphic design is the practice of composing and arranging the visual elements of a project.</p>
 </a></div>
+ */}
 
-
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsDigital(true)} onMouseLeave={() => setIsDigital(false)} style={{backgroundColor: isDigital ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
-<a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
+<div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setIsDigital(true)} onMouseLeave={() => setIsDigital(false)} style={{backgroundColor: isDigital ? 'black' : 'white', "border": "0.5px solid rgb(246, 246, 246)", "padding": " 28px" }}>
+<Link  to="/service/digital-content" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
 
 {isDigital ?   <img src={`assets/img/home/studio/digital-white.png`} alt="UI/UX" style={{backgroundColor: isDigital ? 'white' : '', "width": "13%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
 :  <img src={`assets/img/home/studio/digital.png`} alt="UI/UX" style={{backgroundColor: isDigital ? 'white' : '', "width": "13%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
@@ -181,42 +176,44 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 
 <p  class="text-left service_small_heading" style={{color: isDigital ? 'white' : 'black',"font-weight":'900','paddingLeft':'14%','position':'relative','bottom':'41px'}}>Digital Content Creation</p>
 
-<p class="text-center" style={{color: isDigital ? 'white' : 'black',"font-weight":'500'}}>Content creation is the act of producing and sharing information or media content for specific audiences, particularly in digital contexts.</p>
+<p class="text-center" style={{color: isDigital ? 'white' : 'black',"font-weight":'500'}}>Unlock the success of your business with engaging and valuable digital content. We empower your business with Digital content, TVC or Brand corporate videos.
+</p>
 
-</a></div>
-
-
-
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsTransform(true)} onMouseLeave={() => setIsTransform(false)}
- style={{ backgroundColor: isTransform ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
-<a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
+</Link></div>
 
 
-{isTransform  ? <img src={`assets/img/home/studio/content-creator-white.png`} alt="UI/UX" style={{backgroundColor: isTransform ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
-  : <img src={`assets/img/home/studio/content-creator.png`} alt="UI/UX" style={{backgroundColor: isTransform ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
+
+<div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setIsTransform(true)} onMouseLeave={() => setIsTransform(false)}
+ style={{ backgroundColor: isTransform ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)", "padding": " 28px" }}>
+<Link  to="/service/enterprise-solutions" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
+
+
+{isTransform  ? <img src={`assets/img/home/studio/enterprise_solution-white.png`} alt="UI/UX" style={{backgroundColor: isTransform ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
+  : <img src={`assets/img/home/studio/enterprise_solution.png`} alt="UI/UX" style={{backgroundColor: isTransform ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
 }
 
-<p class="text-left service_small_heading" style={{ color: isTransform ? 'white' : 'black',"font-weight":'900','paddingLeft':'17%','position':'relative','bottom':'37px'}}>Digital Transformation</p>
+<p class="text-left service_small_heading" style={{ color: isTransform ? 'white' : 'black',"font-weight":'900','paddingLeft':'17%','position':'relative','bottom':'37px'}}>Enterprise Solutions</p>
 
-<p class="text-center" style={{ color: isTransform ? 'white' : 'black',"font-weight":'500'}}>It is a comprehensive plan that moves your organization or department from point A of using your current digital tools and processes to point B of using newer digital and tech tools. .</p>
+<p class="text-center" style={{ color: isTransform ? 'white' : 'black',"font-weight":'500'}}>Being a Microsoft Gold Partners, we empower your business to thrive in the digital age, ensuring you're prepared for whatever challenges and opportunities lie ahead.
+</p>
 
-</a></div>
-
-
-
-<div class="col-md-3 col-lg-3 col-xl-3 home_page_services" onMouseEnter={() => setIsResource(true)} onMouseLeave={() => setIsResource(false)} style={{  backgroundColor: isResource ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)", "padding": " 0px" }}>
-<a  href="/service-details" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
+</Link></div>
 
 
-{isResource ? <img src={`assets/img/home/studio/resource-white.png`} alt="UI/UX" style={{backgroundColor: isResource ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "78%",'display':'block'}}/>
-: <img src={`assets/img/home/studio/resource.png`} alt="UI/UX" style={{backgroundColor: isResource ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "78%",'display':'block'}}/>
+
+<div class="col-md-4 col-lg-4 col-xl-4 home_page_services" onMouseEnter={() => setIsResource(true)} onMouseLeave={() => setIsResource(false)} style={{  backgroundColor: isResource ? 'black' : 'white',"border": "0.5px solid rgb(246, 246, 246)", "padding": " 28px" }}>
+<Link  to="/service/growth-uae" style={{ "height": "30vh", "width": " 100%", "margin": " 0px" }}>
+
+
+{isResource ? <img src={`assets/img/home/studio/business-white.png`} alt="UI/UX" style={{backgroundColor: isResource ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "78%",'display':'block'}}/>
+: <img src={`assets/img/home/studio/business.png`} alt="UI/UX" style={{backgroundColor: isResource ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "78%",'display':'block'}}/>
 }
 
-<p  class="text-left service_small_heading" style={{  color: isResource ? 'white' : 'black',"font-weight":'900','paddingLeft':'14%','position':'relative','bottom':'35px'}}>Resource Augmentation</p>
+<p  class="text-left service_small_heading" style={{  color: isResource ? 'white' : 'black',"font-weight":'900','paddingLeft':'14%','position':'relative','bottom':'35px'}}>Business Consulting</p>
 
-<p class="text-center" style={{color: isResource ? 'white' : 'black',"font-weight":'500'}}>Resource augmentation is an agile, cost-effective, and flexible outsourcing strategy that allows businesses to hire third-party top tech talent on a contractual basis for a specific project or various projects.</p>
+<p class="text-center" style={{color: isResource ? 'white' : 'black',"font-weight":'500'}}>We help businesses from various industries to grow and expand their operations and grow into different markets & at the same keep their operations & profits streams smooth.</p>
 
-</a></div>
+</Link></div>
 
     </>
   );

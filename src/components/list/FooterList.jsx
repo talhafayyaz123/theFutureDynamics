@@ -2,12 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const footerItems = [
-  { itemName: "Faqs", link: "" },
   { itemName: "Term & Conditions", link: "/terms" },
   { itemName: "Help", link: "/contact" },
-  { itemName: "Works", link: "/work" },
-  { itemName: "Studio", link: "" },
-  { itemName: "Story", link: "/about-us" },
+  { itemName: "Work", link: "/work" },
+  { itemName: " Our Story", link: "/about-us" },
 ];
 
 const FooterList = () => {

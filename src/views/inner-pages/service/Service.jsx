@@ -6,6 +6,8 @@ import ContactJarallax from "../../../components/jarallax/ContactJarallax";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
 import HeaderDefault from "../../../components/header/HeaderDefault";
+import { Link } from "react-router-dom";
+
 
 const Service = () => {
   return (
@@ -99,7 +101,7 @@ const Service = () => {
                 data-aos="fade"
                 data-aos-delay="0"
               >
-                <h2 className="h1 large-heading">Our Approach</h2>
+                <h2 className="h1 large-heading">Data-Driven & User-Centric Approach</h2>
               </div>
               {/* <!--Spacer--> */}
               <div

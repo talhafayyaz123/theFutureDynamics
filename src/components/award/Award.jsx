@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const awardContent = [
   {
@@ -7,16 +8,13 @@ const awardContent = [
     delayAnimation: "0",
     awardList: [
       {
-        title: "POTY 2021",
-        subTitle: "SPA Brand Redesign",
+        title: "Prince Andrew",
+        subTitle: "Duke of York",
       },
-      {
-        title: "Design Inspiration #5",
-        subTitle: "MNX Business Card",
-      },
+     
     ],
   },
-  {
+  /* {
     date: "2020",
     img: "logo-2",
     delayAnimation: "100",
@@ -45,7 +43,7 @@ const awardContent = [
         subTitle: "Designer Logan Cee",
       },
     ],
-  },
+  }, */
 ];
 
 const Award = () => {
@@ -84,12 +82,12 @@ const Award = () => {
                   <span>{list.subTitle}</span>
                 </div>
                 <div className="ptf-rewards-project__link">
-                  <a
+                  <Link
                     className="ptf-link-with-arrow text-uppercase fz-14"
-                    href="#"
+                   to="/work"
                   >
                     See project
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

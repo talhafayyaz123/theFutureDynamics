@@ -36,8 +36,8 @@ const WorksMasonry = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h1 className="large-heading">
-                        Look at usual things with unusual eyes.
+                      <h1 className="large-heading" style={{fontSize: '3.5rem'}}>
+                      Dive into Our Portfolio, "Where Our Success Stories Shine Bright".
                       </h1>
                     </div>
                   </div>

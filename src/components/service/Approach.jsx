@@ -4,38 +4,39 @@ const approachContent = [
   {
     subTitle: "ONE",
     title: "Research",
-    descriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit cras tempus. Libero ligula, vitae accumsan tortor varius nec. Ut luctus maximus dolor. Nunc sed diam sit amet urna fermentum accumsan vitae vitae diam.`,
+    descriptions: `Our User-Centric & Data-Driven start approach starts right at the beginning of our processes, to design or develop solutions for our prestigious clients. It lays solid foundation for informed decision-making and ensures that your project is well-planned and on the right track.`,
     delayAnimation: "0",
   },
 
   {
     subTitle: "TWO",
     title: "Concept",
-    descriptions: `Donec venenatis consequat libero, quis auctor nunc volutpat quis. Proin at ipsum id magna dapibus dictum eget lobortis magna. Fusce et ligula non tellus vulputate condimentum.`,
+    descriptions: `Our team makes sure to have a well-defined concept that serves as the North Star for the project. It provides a clear and concise vision of what we aim to achieve. This clarity ensures that all team members and stakeholders are working toward a common goal.`,
     delayAnimation: "100",
   },
   {
     subTitle: "THREE",
     title: "Strategy",
-    descriptions: `Consectetur adipiscing elit cras tempus. Libero ligula, vitae accumsan tortor varius nec. Ut luctus maximus dolor. Nunc sed diam sit amet urna fermentum accumsan vitae vitae diam.`,
+    descriptions: `Our strategist makes sure a roadmap towards achieving clarity of purpose, informed decision-making, resource optimizations, risk mitigations, adaptation to change, measurable results & finally Scalability.`,
     delayAnimation: "200",
   },
   {
     subTitle: "FOUR",
     title: "Development",
-    descriptions: `Vivamus vel sollicitudin sem, id sagittis justo. Nam non magna eleifend, tempus nisl quis, commod diam. Morbi gravida ut nulla non porttitor. Suspendis eget arcu eu ex dignissim faucibus. Nullam et luctus tortor.`,
+    descriptions: `Our Agile development approach is grounded in a structured and comprehensive process designed to deliver outstanding results.
+    Meanwhile we keep a margin for client immediate asked updates & changes.`,
     delayAnimation: "300",
   },
   {
     subTitle: "FIVE",
     title: "Test",
-    descriptions: `Suspendisse vel magna vitae nunc consequat eleifend. Aenean iaculis Nam non magna eleifend est eget turpis lacinia egest dictum ipsum sollicitudin.Suspendis eget arcu eu ex dignissim faucibus.`,
+    descriptions: `Our Functional, security and QA team makes sure the reliability, functionality, and user-friendliness of your web or app. It not only minimizes the risk of technical issues but also contributes to success.`,
     delayAnimation: "400",
   },
   {
     subTitle: "SIX",
-    title: "Hand Over",
-    descriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit cras tempus. Libero ligula, vitae accumsan tortor varius nec. Ut luctus maximus dolor. Nunc sed diam sit amet urna fermentum accumsan vitae vitae diam.`,
+    title: "Support",
+    descriptions: `Our commitment to your company extends far beyond project delivery. We understand that ongoing support is essential to ensure the continued success and optimal performance of your web or app after we hand over your project.`,
     delayAnimation: "500",
   },
 ];

@@ -38,8 +38,8 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color text-center"
                 style={{ maxWidth: "34.375rem", margin: "0 auto" }}
               >
-                Like any great agency, we are only as good as the result we
-                deliver of our recent work.
+               Like any great agency, we are only as good as the result we deliver of our recent work.
+                Your Business Growth Partners In Digital Transformation, Technology & Marketing.
               </p>
 
               {/* <!--Spacer--> */}
@@ -83,8 +83,8 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color text-center"
                 style={{ maxWidth: "34.375rem", margin: "0 auto" }}
               >
-                Like any great agency, we are only as good as the result we
-                deliver of our recent work.
+               Like any great agency, we are only as good as the result we deliver of our recent work.
+                Your Business Growth Partners In Digital Transformation, Technology & Marketing.
               </p>
               <div
                 className="ptf-spacer"
@@ -118,8 +118,8 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color"
                 style={{ maxWidth: "34.375rem" }}
               >
-                Like any great agency, we are only as good as the result we
-                deliver of our recent work.
+                      Like any great agency, we are only as good as the result we deliver of our recent work.
+                Your Business Growth Partners In Digital Transformation, Technology & Marketing.
               </p>
               {/* <!--Spacer--> */}
               <div

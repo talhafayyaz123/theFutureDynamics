@@ -62,7 +62,7 @@ const HeaderDefault = () => {
                 <div
                   className="ptf-navbar-search__toggle"
                 >
-              <div style={{"padding-right": "66px"}}><a href="tel:+971527684867">(+971) 52 768 4867</a></div>
+              <div style={{"padding-right": "66px"}}><a href="tel:+971527684867">+971 52 768 4867</a></div>
                 </div>
 
               </div>

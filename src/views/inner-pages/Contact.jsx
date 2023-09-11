@@ -42,8 +42,7 @@ const Contact = () => {
                     data-aos-delay="0"
                   >
                     <h1 className="large-heading">
-                      Let's get Contact an <br />
-                      estimate
+                    Let's Connect & Share Success
                     </h1>
                     {/* <!--Spacer--> */}
                     <div

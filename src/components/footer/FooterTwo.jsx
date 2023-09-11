@@ -12,12 +12,15 @@ const FooterTwo = () => {
               <li>
                 <span>Address</span>
                 <p>
-                  1803 The Metropolis Tower DUBAI
+                Dubai Office | 1803 Metropolis Tower Business Bay Dubai
+                <br></br>
+                Head Office | Stembridge Road, SE20 London
                 </p>
+               
               </li>
               <li>
                 <span>Phone</span>
-                  <a href="tel:+971527684867">(971) 52 768 4867</a>
+                  <a href="tel:+971527684867">+971 52 768 4867</a>
               </li>
 
               <li>

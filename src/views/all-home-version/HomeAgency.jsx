@@ -66,7 +66,7 @@ const HomeAgency = () => {
                           Directly
                         </div>
                         <div className="ptf-phone-block__phone">
-                          <a href="tel:+971527684867">(+971) 52 768 4867</a>
+                          <a href="tel:+971527684867">+971 52 768 4867</a>
                         </div>
                       </div>
                     </div>
@@ -171,14 +171,13 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "5rem", "--ptf-md": "2.5rem" }}
                       ></div>
                       <p className="fz-18" style={{ maxWidth: "30rem" }}>
-                        We help our client suceed by creating identities,
-                        digital experiences, and printmaterials that communicate
-                        clearly, achieve marketing goals, and look fantastic.
+                      We're more than just a team of developers and marketers -
+                      we're a collective of creative minds driven by a singular goal: to empower your brand for success with our 
+                      unique human-centric & data-driven approach.
                       </p>
                       <p className="fz-18" style={{ maxWidth: "30rem" }}>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour
+                      With years of industry experience and a relentless commitment to staying at the forefront of technology trends, 
+                      we've honed our skills to perfection.
                       </p>
                     </div>
                     {/* <!--Spacer--> */}
@@ -226,8 +225,8 @@ const HomeAgency = () => {
                   data-aos-delay="100"
                 >
                   <p className="fz-24" style={{ maxWidth: "42.5rem" }}>
-                    We help ambitious businesses ike yours generate more profits
-                    by building awareness, driving web traffic, etc.
+                  We help ambitious businesses like yours, generate more revenues, awareness & 
+                  attract the right customers!
                   </p>
                 </div>
                 {/* <!--Spacer--> */}

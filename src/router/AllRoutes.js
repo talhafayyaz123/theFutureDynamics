@@ -12,6 +12,15 @@ import HomeModern from "../views/all-home-version/HomeModern";
 // Service
 import Service from "../views/inner-pages/service/Service";
 import ServiceDetails from "../views/inner-pages/service/ServiceDetails";
+import UiUx from "../views/inner-pages/service/UiUx";
+import Website from "../views/inner-pages/service/Website";
+import EnterpriseSolutions from "../views/inner-pages/service/EnterpriseSolutions";
+import MobileAppDevelopment from "../views/inner-pages/service/MobileAppDevelopment";
+import PerformanceMarketing from "../views/inner-pages/service/PerformanceMarketing";
+import Seo from "../views/inner-pages/service/SearchEngineOptimization";
+import DigitalContent from "../views/inner-pages/service/DigitalContent";
+import Ecommerce from "../views/inner-pages/service/Ecommerce";
+import GrowthUae from "../views/inner-pages/service/GrowthUae";
 
 // About
 import AboutUs from "../views/inner-pages/about/AboutUs";
@@ -74,6 +83,15 @@ const AllRoutes = () => {
         {/* Service */}
         <Route path="/service" element={<Service />} />
         <Route path="/service-details" element={<ServiceDetails />} />
+         <Route path="/service/mobile-app-development" element={<MobileAppDevelopment />} />
+        <Route path="/service/ui-ux" element={<UiUx />} />
+         <Route path="/service/website-development" element={<Website />} />
+         <Route path="/service/enterprise-solutions" element={<EnterpriseSolutions />} />
+         <Route path="/service/performance-marketing" element={<PerformanceMarketing />} />
+         <Route path="/service/seo" element={<Seo />} />
+         <Route path="/service/digital-content" element={<DigitalContent />} />
+         <Route path="/service/e-commerce" element={<Ecommerce />} />
+          <Route path="/service/growth-uae" element={<GrowthUae />} />
 
         {/* About */}
         <Route path="/about-us" element={<AboutUs />} />

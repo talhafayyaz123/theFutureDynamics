@@ -6,25 +6,29 @@ const serviceContent = [
     icon: "lnil lnil-cup",
     titlePart1: "Business",
     titlePart2: "Consulting",
-    descriptions: `We provide business consultancy in UAE.`,
+    descriptions: `We provide business expansion in UAE & DUBAI.`,
+    link: `/service/growth-uae`,
   },
   {
     icon: "lnil lnil-website-rank",
-    titlePart1: "Virtual",
-    titlePart2: "Reality",
-    descriptions: `We provide trainings with Virtual Reality.`,
+    titlePart1: "",
+    titlePart2: "E Eommerce",
+    descriptions: `We provide E Eommerce Solutions.`,
+      link: `/service/e-commerce`,
   },
   {
     icon: "lnil lnil-3d",
     titlePart1: "Marketing",
     titlePart2: "",
     descriptions: `We Provide Digital Content ,Search Engine Optimization,Performance Marketing.`,
+    link: `/service/performance-marketing`,
   },
   {
     icon: "lnil lnil-website-rank",
     titlePart1: "Technology",
     titlePart2: "",
-    descriptions: `We provide UI/UX,Website Development,Mobile App Development,Enterprise Solutions.`,
+    link: `/service/ui-ux`,
+    descriptions: `We provide UI/UX,Website Development,Mobile App Development,Enterprise Solutions, E Commerce Platform,IOS|Android|React Native.`,
   },
 ];
 
@@ -41,7 +45,7 @@ const ServiceOne = () => {
           {/* <!--Services Box--> */}
           <div className="ptf-service-box">
             <Link
-              to="/service-details"
+              to={`${val.link}`}
               className="ptf-service-box__link"
             ></Link>
             <div className="ptf-service-box__icon">
