@@ -65,7 +65,7 @@ onMouseLeave={() => setIsPower(false)}  style={{backgroundColor: isPower ? 'blac
 }
 
 <p class="text-left service_small_heading" style={{"font-weight":'900','paddingLeft':'11%','position':'relative',
-    'bottom':'44px',color: isApp ? 'white' : 'black'}}>Mobile App Development</p>
+    'bottom':'53px',color: isApp ? 'white' : 'black'}}>Mobile App Development</p>
 
 <p class="text-center" style={{"font-weight":'500',color: isApp ? 'white' : 'black'}}>
 Our developed Mobile Apps offer enhanced user-engagement, accessibility, brand visibility, direct communication, data insights, customer loyalty & monetization.</p>
@@ -83,9 +83,9 @@ style={{backgroundColor: isWeb ? 'black' : 'white', "border": "0.5px solid rgb(2
 :  <img src={`assets/img/home/studio/website.jpg`} alt="UI/UX" style={{backgroundColor: isWeb ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
 }
 
-<p class="text-left service_small_heading" style={{color: isWeb ? 'white' : 'black',"font-weight":'900','paddingLeft':'16%','position':'relative','bottom':'25px'}}>Website Development</p>
+<p class="text-left service_small_heading" style={{color: isWeb ? 'white' : 'black',"font-weight":'900','paddingLeft':'16%','position':'relative','bottom':'31px'}}>Website Development</p>
 
-<p class="text-center" style={{ "font-weight":'500',color: isWeb ? 'white' : 'black'}}>Strategic online assets that align with your business goals, whether it's to attract customers, drive sales, or share your message</p>
+<p class="text-center" style={{ "font-weight":'500',color: isWeb ? 'white' : 'black','paddingTop': '35px'}}>Strategic online assets that align with your business goals, whether it's to attract customers, drive sales, or share your message</p>
 
 </Link></div>
 
@@ -99,7 +99,7 @@ style={{backgroundColor: isSeo ? 'black' : 'white', "border": "0.5px solid rgb(2
  :  <img src={`assets/img/home/studio/seo.svg`} alt="UI/UX" style={{backgroundColor: isSeo ? 'white' : '', "width": "12%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
 }
 
-<p class="text-left service_small_heading" style={{ color: isSeo ? 'white' : 'black',"font-weight":'900','paddingLeft':'9%','position':'relative','bottom':'45px'}}>Search Engine Optimization</p>
+<p class="text-left service_small_heading" style={{ color: isSeo ? 'white' : 'black',"font-weight":'900','paddingLeft':'9%','position':'relative','bottom':'53px'}}>Search Engine Optimization</p>
 
 <p class="text-center" style={{color: isSeo ? 'white' : 'black',"margin-top": "9%","font-weight":'500'}}>Our digital marketers make sure our SEO is done right that increases traffic, organic traffic, more leads, conversions, and revenue for their business.</p>
 
@@ -113,7 +113,7 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 {isQa ?  <img src={`assets/img/home/studio/performance_marketing-white.png`} alt="UI/UX" style={{backgroundColor: isQa ? 'white' : '', "width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/>
 :  <img src={`assets/img/home/studio/performance_marketing.png`} alt="UI/UX" style={{backgroundColor: isQa ? 'white' : '', "width": "10%","margin-top": "4%","margin-left": "81%",'display':'block'}}/> 
 }
-<p class="text-left service_small_heading" style={{color: isQa ? 'white' : 'black',"font-weight":'900','paddingLeft':'22%','position':'relative','bottom':'31px'}}>Performance Marketing</p>
+<p class="text-left service_small_heading" style={{color: isQa ? 'white' : 'black',"font-weight":'900','paddingLeft':'22%','position':'relative','bottom':'38px'}}>Performance Marketing</p>
 <p  class="text-center" style={{ color: isQa ? 'white' : 'black',"margin-top": "13%","font-weight":'500'}}>ROI based performance marketing is done right after listening to your business goals, understanding specific needs & custom strategies.</p>
 </Link></div>
 
@@ -128,7 +128,7 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 
 }
 
-<p class="text-left service_small_heading" style={{color: isUiInterface ? 'white' : 'black', "font-weight":'900','paddingLeft':'22%','position':'relative','bottom':'32px'}}>UI/UX</p>
+<p class="text-left service_small_heading" style={{color: isUiInterface ? 'white' : 'black', "font-weight":'900','paddingLeft':'38%','position':'relative','bottom':'36px'}}>UI/UX</p>
 
 <p  class="text-center" style={{ color: isUiInterface ? 'white' : 'black',"margin-top": "13%","font-weight":'500'}}>Our user-centric approach & well-crafted UI/UX smooth your user experience journey, increase conversions, reduce bounce rate and are responsive to all devices.
 </p>
@@ -146,7 +146,7 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 
 }
 
-<p class="text-left service_small_heading" style={{color: isUxInterface ? 'white' : 'black',"font-weight":'900','paddingLeft':'19%','position':'relative','bottom':'32px'}}>E-Commerce</p>
+<p class="text-left service_small_heading" style={{color: isUxInterface ? 'white' : 'black',"font-weight":'900','paddingLeft':'27%','position':'relative','bottom':'43px'}}>E-Commerce</p>
 
 <p  class="text-center" style={{ color: isUxInterface ? 'white' : 'black',"margin-top": "13%","font-weight":'500'}}>The world of commerce is evolving rapidly, and the shift to e-commerce is no longer an option but a strategic imperative for businesses of all sizes and industries.</p>
 
@@ -174,7 +174,7 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 :  <img src={`assets/img/home/studio/digital.png`} alt="UI/UX" style={{backgroundColor: isDigital ? 'white' : '', "width": "13%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
 }
 
-<p  class="text-left service_small_heading" style={{color: isDigital ? 'white' : 'black',"font-weight":'900','paddingLeft':'14%','position':'relative','bottom':'41px'}}>Digital Content Creation</p>
+<p  class="text-left service_small_heading" style={{color: isDigital ? 'white' : 'black',"font-weight":'900','paddingLeft':'18%','position':'relative','bottom':'48px'}}>Digital Content Creation</p>
 
 <p class="text-center" style={{color: isDigital ? 'white' : 'black',"font-weight":'500'}}>Unlock the success of your business with engaging and valuable digital content. We empower your business with Digital content, TVC or Brand corporate videos.
 </p>
@@ -192,7 +192,7 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
   : <img src={`assets/img/home/studio/enterprise_solution.png`} alt="UI/UX" style={{backgroundColor: isTransform ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "80%",'display':'block'}}/>
 }
 
-<p class="text-left service_small_heading" style={{ color: isTransform ? 'white' : 'black',"font-weight":'900','paddingLeft':'17%','position':'relative','bottom':'37px'}}>Enterprise Solutions</p>
+<p class="text-left service_small_heading" style={{ color: isTransform ? 'white' : 'black',"font-weight":'900','paddingLeft':'20%','position':'relative','bottom':'42px'}}>Enterprise Solutions</p>
 
 <p class="text-center" style={{ color: isTransform ? 'white' : 'black',"font-weight":'500'}}>Being a Microsoft Gold Partners, we empower your business to thrive in the digital age, ensuring you're prepared for whatever challenges and opportunities lie ahead.
 </p>
@@ -209,7 +209,7 @@ style={{backgroundColor: isQa ? 'black' : 'white', "border": "0.5px solid rgb(24
 : <img src={`assets/img/home/studio/business.png`} alt="UI/UX" style={{backgroundColor: isResource ? 'white' : '', "width": "12%","margin-top": "7%","margin-left": "78%",'display':'block'}}/>
 }
 
-<p  class="text-left service_small_heading" style={{  color: isResource ? 'white' : 'black',"font-weight":'900','paddingLeft':'14%','position':'relative','bottom':'35px'}}>Business Consulting</p>
+<p  class="text-left service_small_heading" style={{  color: isResource ? 'white' : 'black',"font-weight":'900','paddingLeft':'15%','position':'relative','bottom':'39px'}}>Business Consulting</p>
 
 <p class="text-center" style={{color: isResource ? 'white' : 'black',"font-weight":'500'}}>We help businesses from various industries to grow and expand their operations and grow into different markets & at the same keep their operations & profits streams smooth.</p>
 
