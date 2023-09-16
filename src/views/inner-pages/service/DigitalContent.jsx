@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import MarketingServiceList from "../../../components/list/MarketingServiceList";
-import Faq from "../../../components/faq/Faq";
+import MarketingFaq from "../../../components/faq/MarketingFaq";
 import Skills from "../../../components/skill/Skills";
-import Approach2 from "../../../components/service/Approach2";
+import MarketingApproach from "../../../components/service/MarketingApproach";
 import CounterThree from "../../../components/counter/CounterThree";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
@@ -172,7 +172,7 @@ const ServiceDetails = () => {
                     style={{ "--ptf-xxl": "5.625rem" }}
                   ></div>
                   {/* <!--Process Steps--> */}
-                  <Approach2 />
+                  <MarketingApproach />
                 </div>
                 <div className="col-xl-4">
                   <div className="ptf-sidebar ptf-sidebar--right">
@@ -197,7 +197,7 @@ const ServiceDetails = () => {
                         data-aos-delay="0"
                       >
                         <h4 className="ptf-widget-title">FAQs</h4>
-                        <Faq />
+                        <MarketingFaq />
                       </div>
                     </div>
                   </div>

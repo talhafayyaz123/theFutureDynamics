@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import TechnologyServiceList from "../../../components/list/TechnologyServiceList";
 import Faq from "../../../components/faq/Faq";
 import Skills from "../../../components/skill/Skills";
-import Approach2 from "../../../components/service/Approach2";
+import TechnologyApproach from "../../../components/service/TechnologyApproach";
 import CounterThree from "../../../components/counter/CounterThree";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
@@ -189,7 +189,7 @@ const ServiceDetails = () => {
                     style={{ "--ptf-xxl": "5.625rem" }}
                   ></div>
                   {/* <!--Process Steps--> */}
-                  <Approach2 />
+                  <TechnologyApproach />
                 </div>
                 <div className="col-xl-4">
                   <div className="ptf-sidebar ptf-sidebar--right">

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import MarketingServiceList from "../../../components/list/MarketingServiceList";
-import Faq from "../../../components/faq/Faq";
+import Faq from "../../../components/faq/ECommerceFaq";
 import Skills from "../../../components/skill/Skills";
-import Approach2 from "../../../components/service/Approach2";
+import EcommerceApproach from "../../../components/service/EcommerceApproach";
 import CounterThree from "../../../components/counter/CounterThree";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
@@ -228,7 +228,7 @@ const ServiceDetails = () => {
                     style={{ "--ptf-xxl": "5.625rem" }}
                   ></div>
                   {/* <!--Process Steps--> */}
-                  <Approach2 />
+                  <EcommerceApproach />
                 </div>
                 <div className="col-xl-4">
                   <div className="ptf-sidebar ptf-sidebar--right">

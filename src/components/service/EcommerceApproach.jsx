@@ -25,7 +25,7 @@ const approachContent = [
   },
 ];
 
-const Approach2 = () => {
+const EcommerceApproach = () => {
   return (
     <ul className="ptf-process-steps">
       {approachContent.map((val, i) => (
@@ -43,4 +43,4 @@ const Approach2 = () => {
   );
 };
 
-export default Approach2;
+export default EcommerceApproach;
