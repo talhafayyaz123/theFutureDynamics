@@ -1,6 +1,7 @@
 import React from "react";
 import FooterList from "../list/FooterList";
 
+
 const FooterTwo = () => {
   return (
     <div className="row">
@@ -21,6 +22,11 @@ const FooterTwo = () => {
               <li>
                 <span>Phone</span>
                   <a href="tel:+971527684867">+971 52 768 4867</a>
+              </li>
+
+               <li>
+               <span></span>
+                  <a href="tel:+447444545152">+447 44 454 5152</a>
               </li>
 
               <li>

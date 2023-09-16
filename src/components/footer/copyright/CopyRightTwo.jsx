@@ -24,15 +24,18 @@ const CopyRightTwo = () => {
         <p className="ptf-footer-copyright has-3-color">
           ©{new Date().getFullYear()}{" "}
           <span className="has-white-color">
-            <a
-              href="https://thefuturedynamics.com"
+           
+              | &nbsp;
+            
+          </span>
+          <a title="https://dynamicsstream.com"
+              href="https://dynamicsstream.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              | &nbsp;
+                Brand Of Dynamics Stream - Microsoft Gold Partners
             </a>
-          </span>
-             Brand Of Dynamics Stream - Microsoft Gold Partners
+           
         </p>
       </div>
       {/* End .col */}

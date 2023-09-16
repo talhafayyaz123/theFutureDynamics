@@ -13,6 +13,10 @@ const Address = () => {
          1803 The Metropolis Tower DUBAI
         </p>
 
+        <p className="fz-20 lh-1p5 has-black-color">
+         +971 52 768 4867
+        </p>
+
        <h3 className="fz-20 lh-1p5 has-black-color">USA:</h3>
         {/* <!--Spacer--> */}
         <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
@@ -28,6 +32,21 @@ const Address = () => {
         <p className="fz-20 lh-1p5 has-black-color">
       100-104 PCSIR Community Building, LAHORE
         </p>
+
+
+        <h3 className="fz-20 lh-1p5 has-black-color">London:</h3>
+        {/* <!--Spacer--> */}
+        <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
+
+        <p className="fz-20 lh-1p5 has-black-color">
+        Stembridge Road, SE20 London
+        </p>
+
+        <p className="fz-20 lh-1p5 has-black-color">
+         +447 44 454 5152
+        </p>
+
+
       </div>
 
       {/* <!--Spacer--> */}
