@@ -106,7 +106,8 @@ const HomeAgency = () => {
                       data-aos-delay="0"
                     >
                       <h2 className="h1 large-heading has-accent-1">
-                        Creative Design & Advertising
+                      Web/App Design Content Creators
+
                       </h2>
                     </div>
                   </div>
