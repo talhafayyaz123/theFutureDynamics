@@ -26,7 +26,7 @@ const FooterTwo = () => {
 
                <li>
                <span></span>
-                  <a href="tel:+447444545152">+447 44 454 5152</a>
+                  <a href="tel:+447444545152">+44 7444 545152</a>
               </li>
 
               <li>

@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import MarketingServiceList from "../../../components/list/MarketingServiceList";
 import BusinessConsultingFaq from "../../../components/faq/BusinessConsultingFaq";
-import Skills from "../../../components/skill/Skills";
+import FinanceSkills from "../../../components/skill/FinanceSkills";
 import BusinessConsultingApproach from "../../../components/service/BusinessConsultingApproach";
-import CounterThree from "../../../components/counter/CounterThree";
+import BusinessConsultingCounter from "../../../components/counter/BusinessConsultingCounter";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
 import HeaderDefault from "../../../components/header/HeaderDefault";
@@ -201,7 +201,7 @@ const ServiceDetails = () => {
                       "--bs-gutter-y": "7.5rem",
                     }}
                   >
-                    <CounterThree />
+                    <BusinessConsultingCounter />
                   </div>
                   {/* <!--Spacer--> */}
                   <div
@@ -222,7 +222,7 @@ const ServiceDetails = () => {
                     style={{ "--ptf-xxl": "3.75rem" }}
                   ></div>
                   <div className="ptf-skill-box-grid">
-                    <Skills />
+                    <FinanceSkills />
                   </div>
                   {/* <!--Spacer--> */}
                   <div

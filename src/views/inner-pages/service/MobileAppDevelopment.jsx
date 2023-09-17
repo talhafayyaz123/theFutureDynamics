@@ -2,9 +2,9 @@ import React  ,{useState}from "react";
 import { Helmet } from "react-helmet";
 import TechnologyServiceList from "../../../components/list/TechnologyServiceList";
 import Faq from "../../../components/faq/Faq";
-import Skills from "../../../components/skill/Skills";
+import TechnologySkills from "../../../components/skill/TechnologySkills";
 import TechnologyApproach from "../../../components/service/TechnologyApproach";
-import CounterThree from "../../../components/counter/CounterThree";
+import TechnologyCounter from "../../../components/counter/TechnologyCounter";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
 import HeaderDefault from "../../../components/header/HeaderDefault";
@@ -138,7 +138,7 @@ At theFuture DYNAMICS, we help you turn your potential & creative ideas into pro
                       "--bs-gutter-y": "7.5rem",
                     }}
                   >
-                    <CounterThree />
+                    <TechnologyCounter />
                   </div>
                   {/* <!--Spacer--> */}
                   <div
@@ -159,7 +159,7 @@ At theFuture DYNAMICS, we help you turn your potential & creative ideas into pro
                     style={{ "--ptf-xxl": "3.75rem" }}
                   ></div>
                   <div className="ptf-skill-box-grid">
-                    <Skills />
+                    <TechnologySkills />
                   </div>
                   {/* <!--Spacer--> */}
                   <div

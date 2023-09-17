@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import MarketingServiceList from "../../../components/list/MarketingServiceList";
 import Faq from "../../../components/faq/ECommerceFaq";
-import Skills from "../../../components/skill/Skills";
+import EcommerceSkills from "../../../components/skill/EcommerceSkills";
 import EcommerceApproach from "../../../components/service/EcommerceApproach";
-import CounterThree from "../../../components/counter/CounterThree";
+import EcommerceCounter from "../../../components/counter/EcommerceCounter";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../../components/footer/FooterTwo";
 import HeaderDefault from "../../../components/header/HeaderDefault";
@@ -176,7 +176,7 @@ const ServiceDetails = () => {
                       "--bs-gutter-y": "7.5rem",
                     }}
                   >
-                    <CounterThree />
+                    <EcommerceCounter />
                   </div>
                   {/* <!--Spacer--> */}
                   <div
@@ -197,7 +197,7 @@ const ServiceDetails = () => {
                     style={{ "--ptf-xxl": "3.75rem" }}
                   ></div>
                   <div className="ptf-skill-box-grid">
-                    <Skills />
+                    <EcommerceSkills />
                   </div>
                   {/* <!--Spacer--> */}
                   <div

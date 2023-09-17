@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import MarketingServiceList from "../../../components/list/MarketingServiceList";
 import MarketingFaq from "../../../components/faq/MarketingFaq";
-import Skills from "../../../components/skill/Skills";
+import MarketingSkills from "../../../components/skill/MarketingSkills";
 import MarketingApproach from "../../../components/service/MarketingApproach";
 import CounterThree from "../../../components/counter/CounterThree";
 import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
@@ -161,7 +161,7 @@ const ServiceDetails = () => {
                     style={{ "--ptf-xxl": "3.75rem" }}
                   ></div>
                   <div className="ptf-skill-box-grid">
-                    <Skills />
+                    <MarketingSkills />
                   </div>
                   {/* <!--Spacer--> */}
                   <div

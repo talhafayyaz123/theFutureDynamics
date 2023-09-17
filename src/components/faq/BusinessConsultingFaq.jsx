@@ -8,6 +8,12 @@ import {
 } from "react-accessible-accordion";
 
 const FaqContent = [
+  
+  {
+    title: "What does a business consultant do?",
+    desc: `We provide expert advice and solutions to help businesses overcome challenges, improve operations, strategic guidance, market insights, and problem-solving expertise.`,
+    expand: "a",
+  },
   {
     title: " How much does website cost?",
     desc: `Alienum phaedrum torquatos nec eu, detr periculis ex, nihil expe ndismei. Meian
@@ -17,11 +23,6 @@ const FaqContent = [
     4- If i not satify with your service, can i get a refund?
     5- Do you provide NDA Agreement?
     `,
-    expand: "a",
-  },
-  {
-    title: "What does a business consultant do?",
-    desc: `We provide expert advice and solutions to help businesses overcome challenges, improve operations, strategic guidance, market insights, and problem-solving expertise.`,
     expand: "b",
   },
   {
