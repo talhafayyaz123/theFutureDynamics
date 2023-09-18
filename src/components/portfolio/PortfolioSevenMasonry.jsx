@@ -22,17 +22,17 @@ const portfolioMenu = [
 const portfolioContent = [
   {
     tabContent: [
-      { img: "work-1", meta: "Web Design", title: "Mid Star" ,to:'/work/mid-star' },
-      { img: "work-3", meta: "Web Design, Branding", title: "NG20" ,to:'/work/n2go'},
-      { img: "work-5", meta: "Web Design", title: "Bhuth" ,to:'/work/bhuth'},
-      { img: "work-4", meta: "Illustration", title: "American Hospital" ,to:'/work/hospital'},
-      { img: "work-2", meta: "Branding, Motion", title: "Continental" ,to:'/work/continental'},
-      { img: "work-6", meta: "Branding, Motion", title: "Talabat" ,to:'/work/talabat' },
-      { img: "talends", meta: "Branding, Motion", title: "Talends" ,to:'/work/talends' },
-      { img: "iBnk.io", meta: "Branding, Motion", title: "iBnk.io" ,to:'/work/ibnk' },
-      { img: "ewt", meta: "Branding, Motion", title: "EWT" ,to:'/work/ewt' },
-      { img: "easyCar", meta: "Branding, Motion", title: "Easy Car Parts" ,to:'/work/easy-car-parts' },
-      { img: "frame", meta: "Illustration", title: "Christy Dawn" ,to:'/work/frame' },
+      { img: "work-1", meta: "iOS/ Android App QA, Security Testing, Functional Testing", title: "MidStar" ,to:'/work/mid-star' },
+      { img: "work-3", meta: "iOS/ Android App Design & Development, ASO, Payment Gateway Integrations", title: "N2Go" ,to:'/work/n2go'},
+      { img: "work-5", meta: "Web Application UI/UX & Development, SEO", title: "B'huth" ,to:'/work/bhuth'},
+      { img: "work-4", meta: "UI/UX, Web Application & Search Engine Development", title: "American Hospital" ,to:'/work/hospital'},
+      { img: "work-2", meta: "UI/UX, Web Application & Search Engine Development,  SEO, Integrations", title: "Continental" ,to:'/work/continental'},
+      { img: "work-6", meta: " Microsoft 365 Implementation, Integrations, Cloud", title: "Talabat" ,to:'/work/talabat' },
+      { img: "talends", meta: "Application Architecture, UI/UX, Development, SEO, Integrations, Support", title: "Talends" ,to:'/work/talends' },
+      { img: "iBnk.io", meta: "Branding, UI/UX, Web Application, SEO", title: "iBnk" ,to:'/work/ibnk' },
+      { img: "ewt", meta: " Application Architecture, UI/UX, Web App Development, Integrations", title: "EWT" ,to:'/work/ewt' },
+      { img: "easyCar", meta: "eCommerce Design & Development, SEO", title: "Easy Car" ,to:'/work/easy-car-parts' },
+      { img: "frame", meta: "eCommerce Design & Development, Integrations, Support", title: "Christy Dawn" ,to:'/work/frame' },
     ],
   },
  /*  {
