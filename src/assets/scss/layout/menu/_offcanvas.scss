@@ -106,6 +106,19 @@
 .ptf-navbar-search {
   margin-right: 4.2rem;
 }
+.header_phone_no_toogle{
+  font-size: 1.1rem !important;
+}
+@media only screen and (min-width: 360px) and (max-width: 850px) {
+  .header_search_bar{
+    margin-right: 1rem !important;
+  }
+  .ptf-navbar-search{
+    margin-right: 2.2rem;
+  }
+
+}
+
 .js-offcanvas-menu-toggle.bar {
   position: absolute;
   right: 0;
