@@ -12,15 +12,15 @@ const serviceContent = [
   {
     icon: "lnil lnil-website-rank",
     titlePart1: "",
-    titlePart2: "E Eommerce",
-    descriptions: `We provide E Eommerce Solutions.`,
+    titlePart2: "E Commerce",
+    descriptions: `We provide E Commerce Solutions.`,
       link: `/service/e-commerce`,
   },
   {
     icon: "lnil lnil-3d",
     titlePart1: "Marketing",
     titlePart2: "",
-    descriptions: `We Provide Digital Content ,Search Engine Optimization,Performance Marketing.`,
+    descriptions: `We Provide Digital Content,Search Engine Optimization,Performance Marketing.`,
     link: `/service/performance-marketing`,
   },
   {
@@ -28,7 +28,7 @@ const serviceContent = [
     titlePart1: "Technology",
     titlePart2: "",
     link: `/service/ui-ux`,
-    descriptions: `We provide UI/UX,Website Development,Mobile App Development,Enterprise Solutions, E Commerce Platform,IOS|Android|React Native.`,
+    descriptions: `We provide UI/UX,Website Development,Mobile App Development,Enterprise Solutions,E Commerce Platform,IOS|Android|React Native.`,
   },
 ];
 

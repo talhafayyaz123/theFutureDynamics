@@ -53,16 +53,17 @@ const HeaderDefault = () => {
                 <DropdownMenu />
               </nav>
               {/* <!--Buttons--> */}
-                <div
+              <div
                 className={
-                  click ? "ptf-navbar-search is-open" : "ptf-navbar-search"
+                  click ? "ptf-navbar-search is-open" : "ptf-navbar-search header_search_bar"
                 }
               >
 
                 <div
-                  className="ptf-navbar-search__toggle"
+                  className="ptf-navbar-search__toggle header_phone_no_toogle"
+
                 >
-              <div style={{"padding-right": "66px"}}><a href="tel:+971527684867">+971 52 768 4867</a></div>
+              <div><a href="tel:+971527684867">+971 52 768 4867</a></div>
                 </div>
 
               </div>

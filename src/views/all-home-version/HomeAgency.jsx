@@ -65,7 +65,7 @@ const HomeAgency = () => {
                           <br />
                           Directly
                         </div>
-                        <div className="ptf-phone-block__phone">
+                        <div className="ptf-phone-block__phone homepage_phone_no">
                           <a href="tel:+971527684867">+971 52 768 4867</a>
                         </div>
                       </div>
